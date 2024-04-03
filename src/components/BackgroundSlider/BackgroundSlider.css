@@ -1,0 +1,120 @@
+.slider-show {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+}
+
+.menuBtnSlider {
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10; /* Ensure it's above the images */
+}
+
+.menuBtnSlider button{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  background-color: var(--transparentBlackColor);
+  color:var(--mainColor);
+  font-family: var(--fontFamily-forum);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menuBtnSlider button:hover{
+  background-color: var(--mainColor);
+  color:var(--transparentBlackColor);
+}
+
+.slider-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--mainColor);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.slider-controls button:first-of-type {
+  left: 10px;
+}
+
+.slider-controls button:last-of-type {
+  right: 10px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: var(--white);
+}
+
+.slider-text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 100%;
+}
+.slider-text-container p{
+  width: 70%;
+  font-size: 2rem;/* 
+  border: 1px solid var(--mainColor);
+  border-radius: 4px; 
+  background-color: var(--transparentBlackColor);
+  padding: 0.5rem;*/
+  color:var(--mainColor);
+  font-family: var(--fontFamily-forum);
+  text-shadow: 1px 1px #000;
+  padding-bottom: 1rem;
+}
+.slider-text-container h2{
+  color:var(--white);
+  font-size: 2.6rem;
+  text-shadow: 1px 1px #000;
+}
+@media screen and (max-width: 1000px) {
+  .slider-text-container p{
+    font-size: 1.2rem;
+  }  
+  .slider-text-container h2{
+    font-size: 1.8rem;
+  }
+}

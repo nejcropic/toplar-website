@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Forum&display=swap');
+@font-face {
+  font-family: 'ToplarFont';
+  src:
+       url('./fonts/Yugoslavia_script-demo-ffp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+:root{
+  /* colors */
+  --mainColor: hsl(38, 61%, 73%);;
+  --smoky-black-1: hsla(0, 3%, 7%, 1);
+  --eerie-black-1: hsla(210, 4%, 9%, 1);
+  --secondaryColor: rgba(255,204,41,255);
+  --textColor: #eee;
+  --transparentBlackColor: rgba(0, 0, 0,0.55);
+  --transparentWhiteColor: rgba(255, 255, 255,0.55);
+  --white: hsla(0, 0%, 100%, 1);
+  --black: hsla(0, 0%, 0%, 1);
+  --grey: grey;
+  /* fonts */
+  --fontFamily-forum: 'Forum', cursive;
+  --fontFamily-dm_sans: 'DM Sans', sans-serif;
+  --fontFamily-toplar: 'ToplarFont', fallback-font, sans-serif;
+  /* font size */
+  --fontSizePc: 1.2rem;
+  --fontSizePhone: 1rem;
+
+}
+
+*{
+  padding: 0;
+  margin: auto; 
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--mainColor);
+  color:  var(--eerie-black-1);
+}
+*::-webkit-scrollbar-thumb {
+  color: var(--eerie-black-1);
+}
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  background-color: var(--eerie-black-1);
+}
+
+a {
+  text-decoration: none;
+}

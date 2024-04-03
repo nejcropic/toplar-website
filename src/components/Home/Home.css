@@ -1,0 +1,125 @@
+.background-container {
+    height: 100vh;
+}
+.home-wrapper{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--eerie-black-1);
+    color: var(--mainColor);
+}
+
+.home-container {
+    width: 90vw;/* 
+    min-height: 100vh; */
+    height: auto;
+    border-radius: 4px;
+    padding: 2rem 0;
+}
+.home-flex {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-flex{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .home-container{
+        width: 60vw;
+        padding: 0 5vw;
+    }
+}
+
+
+.home-image {
+    width: 50%;
+    max-height: 50vh;
+    padding: 1rem;
+}
+.home-image img{
+    width: 70%;
+    max-height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .home-image{
+        width: 100%;
+    }
+    .home-image img{
+        width: 100%;
+        max-height: 100%;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .home-container hr{
+        margin-top: 3rem;
+      }
+}
+/* ------------------HOME-TEXT---------------------- */
+.home-text {
+    width: 50%;
+}
+
+.home-text h2, .home-text h3, .home-text p {
+    font-size: var(--fontSizePc);
+    color: var(--white);
+    padding: 0.5rem 0;
+} 
+.home-text h2{
+    color: var(--mainColor);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.home-text p{
+    color: var(--white);    
+}
+@media screen and (max-width: 1000px) {
+    .home-text {
+        width: 100%;
+    }   
+    .home-text h3{
+        font-size: var(--fontSizePhone);
+    }    
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+    .home-text p {
+        font-size: var(--fontSizePhone);
+    }
+}
+
+/* ------------------BUTTON---------------------- */
+.menuBtn {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  
+  .menuBtn button{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 4px;
+    background-color: var(--transparentBlackColor);
+    color:var(--mainColor);
+    font-family: var(--fontFamily-forum);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .menuBtn button:hover{
+    background-color: var(--mainColor);
+    color:var(--eerie-black-1);
+  }
+  
+  .home-container hr{
+    margin-top: 1rem;
+    border: 1px dashed var(--mainColor);
+    width: 50%;
+  }
+

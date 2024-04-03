@@ -1,0 +1,131 @@
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+.hero-mid{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+/* @media screen and (min-width: 1920px) {
+    .hero-mid{
+        max-width: 60vw;
+    }
+} */
+
+.hero h1 {
+    padding-top: 4rem !important;
+}
+.hero-mid img, .hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero-text{
+    position: absolute;
+    top: 30vh;
+    left: 10%;
+    width: 10rem;
+    padding: 0.5rem 0;
+    max-height: 4rem;
+    font-family: var(--fontFamily-forum);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .hero .hero-text{
+        top: 25vh;
+        left: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-mid > .hero-text{
+        top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1930px) {
+    .hero-text{
+        top: 28%;
+        left: 25%;
+    }
+}
+
+.hero-text h1{
+    font-size: 4rem;
+    font-family: var(--fontFamily-forum);
+    font-weight: 800;
+    text-shadow: 2px 2px var(--eerie-black-1);
+    color: var(--mainColor);
+
+}
+
+.hero-text p{
+    font-size: 1.3rem;
+    font-family: var(--fontFamily-forum);
+    color: var(--mainColor);
+    text-shadow: 1px 1px var(--eerie-black-1);
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+.hero-text .show{
+    text-decoration: none;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: var(--fontFamily-toplar);
+    color: var(--mainColor);
+}
+
+.hero-text .hide{
+    display: none;
+}
+
+@media screen and (max-width: 555px) {
+    .hero-text p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .hero-text .show{
+        padding:.6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+}
+
+.showBtn{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 4px;
+    background-color: var(--transparentBlackColor);
+    color:var(--mainColor);
+    font-family: var(--fontFamily-forum);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .showBtn:hover{
+    background-color: var(--mainColor);
+    color:var(--eerie-black-1);
+  }
+
+.hideBtn {
+    display: none;
+}

@@ -1,0 +1,61 @@
+.onas-wrapper {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    background-color: var(--eerie-black-1);
+    color: var(--mainColor);
+    font-family: var(--fontFamily-forum);
+    padding: 2rem 1rem;
+}
+
+.onas-container {
+    background-color: var(--smoky-black-1);
+    width: 80%;
+    padding: 0 0.5rem;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.onas-container p{
+    font-size: 1.2rem;
+}
+.onas-container img{
+    width: 50%;
+    height: auto;
+    padding: 2rem 1rem;
+}
+.onas-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.onas-flex p{
+    padding: 1rem;
+    width: 50%;
+}
+.reverse {
+    flex-direction: row-reverse;
+    background-color: var(--mainColor);
+}
+.reverse p{
+    color: var(--smoky-black-1);
+}
+@media screen and (max-width: 1000px) {
+    .onas-container {
+        width: 100%;
+    }
+    .onas-container img{
+        width: 100%;
+    }
+    .onas-flex{
+        flex-direction: column;
+    }
+    .onas-flex p{
+        width: 100%;
+    }
+  }
+
+@media screen and (min-width: 2560px) {
+    .onas-container {
+        width: 50%;
+    }
+}

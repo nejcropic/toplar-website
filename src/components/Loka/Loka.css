@@ -1,0 +1,34 @@
+.loka-wrapper {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    background-color: var(--eerie-black-1);
+    font-family: var(--fontFamily-forum);
+    padding-top: 1rem;
+}
+
+.loka-container {
+    width: 100%;
+    height: 100vh;
+    border-right: 1px solid black;
+    border-left: 1px solid black; 
+}
+.loka-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .loka-container {
+        width: 100%;
+    }
+  }
+
+@media screen and (min-width: 2560px) {
+    .loka-container {
+        width: 50%;
+    }
+}
+.second {
+    background-color: var(--smoky-black-1);
+}

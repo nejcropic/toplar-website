@@ -1,0 +1,204 @@
+.nav-group {
+    background-color: var(--transparentBlackColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    height: 80px;
+    border-radius: 0 0 13px 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.3s linear;
+    z-index: 55;
+}
+.nav-bg{
+    top: -80px;
+    transition: 0.3s linear;
+}
+.navbar-h1{
+    padding-right: 5px;
+}
+
+.nav-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+    font-family: var(--fontFamily-forum);
+    font-weight: var(--weight-bold);
+    background-color: transparent;
+    
+}
+.nav-menu hr{
+    display: none;
+}
+.nav-menu div{
+    background-color: transparent;
+}
+.nav-links {
+    text-decoration: none;
+    color: var(--mainColor);
+    line-height: 2.75rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    list-style: none;
+    white-space: nowrap;
+    background-color: transparent;
+}
+.nav-links:hover{
+    background-color: var(--mainColor);
+    color: var(--smoky-black-1);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-toplar {
+    font-size: 3.5rem;
+    background-color: none;
+    font-family: var(--fontFamily-toplar);
+}
+.nav-toplar:hover {
+    background-color: transparent;
+    color: var(--mainColor);
+}
+.nav-loka {
+    display: none;
+}
+.menu-icons{
+    color: var(--mainColor);
+    display: none;
+}
+.menu-title{
+    color: var(--mainColor);
+    background-color: var(--transparentBlackColor);
+    position: absolute;
+    width: 80%;
+    top: 20px;
+    left: 0%;
+    text-align: left;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    height: 80px;
+    display: none;
+    z-index: 3;
+}
+.menu-title img{
+    width: 100%;
+    object-fit: fill;
+}
+.menu-titles {
+    font-family: var(--fontFamily-forum);
+    font-size: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+    .nav-group {
+        position: fixed;
+        width: 20%;
+        right: -50vw;
+        border-radius: 0 0 0 13px;
+    }
+
+    .navbar-logo {
+        font-size: 16px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--smoky-black-1);
+        width: 300%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right:-300%;
+        opacity: 0;
+        align-items: stretch;
+        padding: 0 0 0 0;
+        margin: 0;
+        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        border-radius: 0 0 0 13px;
+    }
+
+    .nav-menu.active{
+        right:0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        border-left: 1px solid var(--mainColor);
+        border-bottom: 1px solid var(--mainColor);
+
+    }
+    .nav-menu hr{
+        display: block;
+        max-width: 90px;
+        color: var(--mainColor);
+    }
+    .nav-links{
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.6rem 0;
+        color: var(--mainColor);
+    }
+    
+    .nav-links:hover{
+        background: none;
+        color: var(--mainColor);
+    }
+    .nav-toplar {
+        display: none;
+    }
+    .menu-icons{
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+    }
+    .menu-icons h3 {
+        padding: 0 9rem 0 0;
+    }
+    .no-border {
+        border-radius: 0;
+    }
+    .menu-icons i{
+        font-size: 1.2rem;
+    }
+    .fa-bars{
+        color: var(--mainColor);
+    }
+    .fa-times {
+        color: var(--mainColor);
+    }
+    .menu-title {
+        display: flex;
+    }
+}
+
+.lokaNav-container {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 200px;
+    height: 80px;
+    z-index: 999;
+    background-color: var(--transparentBlackColor);
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    font-family: var(--fontFamily-forum);
+    font-weight: var(--weight-bold);
+}
+
+@media only screen and (max-width: 1024px) {
+    .lokaNav-container{
+        display: none;
+    }
+}
