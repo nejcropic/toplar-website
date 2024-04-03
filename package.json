@@ -16,6 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start --host 192.168.8.111",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
