@@ -57,15 +57,17 @@
 /* -------------------------PIZZA------------------- */
 .meni-pizza {
     display: flex;
+    flex-grow: 2;
     margin-bottom: 1rem;
-    padding: 0 0.3rem;
-    width: 100%;
+    padding: 0;
+    width: 50%;
 }
 .meni-velikosti-left {
-    width: 70%;
+    width: 80%;
     padding: 0 1rem;
 }
 .meni-velikosti-left hr{
+    width: 100%;    
     border: 1px solid var(--mainColor);
 }
 .meni-velikosti {
@@ -73,15 +75,59 @@
     width: 30%;
     align-items: center;
 }
+.show-pizza {
+    display: flex;
+}
+.pizza-line {
+    width: 70%;
+    max-width: 80%;
+    padding: 0 0.5rem;
+    margin: 0;
+    /*  */
+    
+}
+
+.pizza-line hr{
+    width: 100%;    
+    border: 1px solid var(--mainColor);
+    height: 30px;
+    border-style: solid;
+    border-color: var(--mainColor);
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+.pizza-line hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: var(--mainColor);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
 @media screen and (max-width: 1000px) {  
     .meni-pizza {
-        padding-right: 0.5rem;
+        width: 10%;
+    }
+    .meni-velikosti-left {
+        width: 60%;
+        padding: 0 1rem;
     }
     .meni-velikosti {
-        width: 33%;
+        width: 30%;
     }
-    .pizza {
-        min-width: 20%;
+    .meni-velikosti h2{
+        padding-left: 0.7rem;
+    }
+    .pizza-line {
+        width: 60%;
+    }
+    .show-pizza {
+        display: none;
+    }
+    .pizza-cena  {
+        padding-left: 0.7rem;
     }
 }
 /* -------------------------KARTICA-ITEM------------------- */
@@ -127,6 +173,7 @@
 .meni-content {
     flex-grow: 2;
     width: 50%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     background-color: var(--transparentBlackColor1);
@@ -169,6 +216,7 @@
         width: 100%;
         max-width: 100%;
     }
+    
 }
 
 .meni-title {
@@ -188,6 +236,21 @@
 .meni-line hr{
     width: 100%;    
     border: 1px solid var(--mainColor);
+    height: 30px;
+    border-style: solid;
+    border-color: var(--mainColor);
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+.meni-line hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: var(--mainColor);
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
 
 .meni-cena {
@@ -270,6 +333,7 @@
     width: 100%;
     z-index: 1;
 }
+
 .buttons-container nav{
     width: 50vw;
     background-color: var(--transparentBlackColor);

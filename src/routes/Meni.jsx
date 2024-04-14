@@ -139,31 +139,42 @@ function Meni() {
 
           <div className="meni-flex">
             <h1>Pizze</h1>
-            <div className="meni-pizza">
-              <div className="meni-velikosti-left">
-                <hr />
+            <div className="meni-divide">
+              <div className="meni-pizza">
+                <div className="meni-velikosti-left">
+                  <hr />
+                </div>
+                <div className="meni-velikosti">
+                  <h2>Mala</h2>
+                  <h2>Velika</h2>
+                </div>
               </div>
-              <div className="meni-velikosti">
-                <h2>Mala</h2>
-                <h2>Velika</h2>
+              <div className="meni-pizza show-pizza">
+                <div className="meni-velikosti-left">
+                  <hr />
+                </div>
+                <div className="meni-velikosti">
+                  <h2>Mala</h2>
+                  <h2>Velika</h2>
+                </div>
               </div>
             </div>
             <div className="meni-divide">
               {Pizze.map((item, index) => {
                 return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-content">
+                  <div className="meni-content" key={index}>
+                    <div className="meni-content-burger">
                       <div className="meni-title">
                         <h3>{item.title}</h3>
-                        <h4>{item.alergeni}</h4>
+                        {/* <h4>{item.alergeni}</h4> */}
                       </div>
-                      <div className="meni-line ">
+                      <div className=" pizza-line">
                         <hr />
                       </div>
-                      <div className="meni-cena">
+                      <div className="meni-cena pizza-cena">
                         <h3>{item.cenaMala}€</h3>
                       </div>
-                      <div className="meni-cena">
+                      <div className="meni-cena pizza-cena">
                         <h3>{item.cenaVelika}€</h3>
                       </div>
                     </div>
@@ -229,7 +240,8 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {item.alergeni}
+                        {item.title}
+                        {/*  {item.alergeni} */}
                       </h3>
                     </div>
                     <div className="meni-line">
@@ -261,7 +273,7 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {item.alergeni}
+                        {item.title} {/* {item.alergeni} */}
                       </h3>
                     </div>
                     <div className="meni-line">
@@ -293,7 +305,8 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>{item.title}</h3>
-                      <h4>{item.alergeni}</h4>
+                      {/* 
+                      <h4>{item.alergeni}</h4> */}
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -324,7 +337,8 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>{item.title}</h3>
-                      <h4>{item.alergeni}</h4>
+                      {/* 
+                      <h4>{item.alergeni}</h4> */}
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -355,7 +369,8 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>{item.title}</h3>
-                      <h4>{item.alergeni}</h4>
+                      {/* 
+                      <h4>{item.alergeni}</h4> */}
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -386,7 +401,7 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {item.alergeni}
+                        {item.title} {/* {item.alergeni} */}
                       </h3>
                     </div>
                     <div className="meni-line">
@@ -417,7 +432,7 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {item.alergeni}
+                        {item.title} {/* {item.alergeni} */}
                       </h3>
                     </div>
                     <div className="meni-line">
