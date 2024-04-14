@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/toplar-website/static/css/main.aea0b1a1.css",
+    "main.css": "/toplar-website/static/css/main.e7b902b0.css",
     "main.js": "/toplar-website/static/js/main.ae69c463.js",
     "static/media/toplar_galerija2.jpg": "/toplar-website/static/media/toplar_galerija2.f1baec94d54de932a5e1.jpg",
     "static/media/toplar_galerija3.jpg": "/toplar-website/static/media/toplar_galerija3.d5f1385b9e91b91a8a1c.jpg",
@@ -38,11 +38,11 @@
     "static/media/logo1.jpg": "/toplar-website/static/media/logo1.69a11e5b677ed00b1937.jpg",
     "static/media/toplar_logo.jpg": "/toplar-website/static/media/toplar_logo.234bb7d9ba13986bf45a.jpg",
     "index.html": "/toplar-website/index.html",
-    "main.aea0b1a1.css.map": "/toplar-website/static/css/main.aea0b1a1.css.map",
+    "main.e7b902b0.css.map": "/toplar-website/static/css/main.e7b902b0.css.map",
     "main.ae69c463.js.map": "/toplar-website/static/js/main.ae69c463.js.map"
   },
   "entrypoints": [
-    "static/css/main.aea0b1a1.css",
+    "static/css/main.e7b902b0.css",
     "static/js/main.ae69c463.js"
   ]
 }
