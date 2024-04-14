@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import App from "./App";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
 
 import Logo from "./images/logo1.jpg";
 import Toplar1 from "./images/toplar1.jpg";
@@ -124,12 +125,11 @@ export {
   ParkLoka2,
 };
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <BrowserRouter>
-    <PreloadImages />
-    <App />
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <HashRouter>
+      <PreloadImages />
+      <App />
+    </HashRouter>
+  </React.StrictMode>
 );
