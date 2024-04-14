@@ -168,6 +168,7 @@
 .meni-divide {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .meni-content {
@@ -208,9 +209,12 @@
 }
 
 @media screen and (max-width: 1000px) {
+    
     .meni-content {
+        flex-grow: 1;
         padding: 0.5rem;
         width: 100%;
+        max-width: 100%;
     }
     .meni-content-up{
         width: 100%;
@@ -252,7 +256,11 @@
     border-width: 0 0 1px 0;
     border-radius: 20px;
 }
-
+@media screen and (max-width: 1000px) {  
+    .meni-line {
+        width: 60%;
+    }
+}
 .meni-cena {
     width: 15%;
     margin: 0;
