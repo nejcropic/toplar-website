@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/toplar-website/static/css/main.e7b902b0.css",
-    "main.js": "/toplar-website/static/js/main.ae69c463.js",
+    "main.css": "/toplar-website/static/css/main.e03a111e.css",
+    "main.js": "/toplar-website/static/js/main.9ef3ccf5.js",
     "static/media/toplar_galerija2.jpg": "/toplar-website/static/media/toplar_galerija2.f1baec94d54de932a5e1.jpg",
     "static/media/toplar_galerija3.jpg": "/toplar-website/static/media/toplar_galerija3.d5f1385b9e91b91a8a1c.jpg",
     "static/media/toplar_galerija1.jpg": "/toplar-website/static/media/toplar_galerija1.f5730068f0bec7d4dc4f.jpg",
@@ -17,15 +17,29 @@
     "static/media/toplar6.jpg": "/toplar-website/static/media/toplar6.495f3500595986042cdd.jpg",
     "static/media/toplar2.jpg": "/toplar-website/static/media/toplar2.99569fbe2471a51c5d28.jpg",
     "static/media/toplar14.jpg": "/toplar-website/static/media/toplar14.8e16a5edf083bfd30cac.jpg",
+    "static/media/logo.png": "/toplar-website/static/media/logo.79c4730203e0e523ddde.png",
     "static/media/toplar_temna.jpg": "/toplar-website/static/media/toplar_temna.2737bfc7e73641e6c56f.jpg",
+    "static/media/parkloka6.jpg": "/toplar-website/static/media/parkloka6.1324a173a323b7b95de9.jpg",
     "static/media/toplar15.jpg": "/toplar-website/static/media/toplar15.e8fd457adc1d5d9b04ec.jpg",
+    "static/media/parkLoka3.jpg": "/toplar-website/static/media/parkLoka3.de9931d5ab978de6bd9a.jpg",
+    "static/media/parkloka5.jpg": "/toplar-website/static/media/parkloka5.81dd4f9da1d376448721.jpg",
+    "static/media/parkloka9.jpg": "/toplar-website/static/media/parkloka9.0e4c66cf9e66a7e5ae0e.jpg",
+    "static/media/parkloka4.jpg": "/toplar-website/static/media/parkloka4.d950c784e66df4677236.jpg",
     "static/media/toplar16.jpg": "/toplar-website/static/media/toplar16.48d23e21ef670b04a5ba.jpg",
     "static/media/toplar4.jpg": "/toplar-website/static/media/toplar4.2d29f5b1398db9496fbb.jpg",
+    "static/media/parkloka7.jpg": "/toplar-website/static/media/parkloka7.d31d32b3604d918607af.jpg",
     "static/media/toplar3.jpg": "/toplar-website/static/media/toplar3.0c0eebf53826d3a6c9ab.jpg",
+    "static/media/parkloka8.jpg": "/toplar-website/static/media/parkloka8.decc6ea3979d70b52849.jpg",
+    "static/media/parkloka10.jpg": "/toplar-website/static/media/parkloka10.33bb70399c61b81482f7.jpg",
     "static/media/parkLoka2.jpeg": "/toplar-website/static/media/parkLoka2.88b0a474e2498e83afbe.jpeg",
     "static/media/parkLoka1.jpeg": "/toplar-website/static/media/parkLoka1.0903c316a9abfe6cf22b.jpeg",
+    "static/media/kozolec4.jpeg": "/toplar-website/static/media/kozolec4.dcb397d8faf5e9ed52a8.jpeg",
+    "static/media/kozolec3.jpeg": "/toplar-website/static/media/kozolec3.73c881f040c83f5681aa.jpeg",
     "static/media/Yugoslavia_script-demo-ffp.ttf": "/toplar-website/static/media/Yugoslavia_script-demo-ffp.b0f72f4263fdd8e73a25.ttf",
     "static/media/toplar_galerija6.jpg": "/toplar-website/static/media/toplar_galerija6.1971f6e1deee79939ddd.jpg",
+    "static/media/toplar_kava.jpg": "/toplar-website/static/media/toplar_kava.bceb3765adff9ff3c8dd.jpg",
+    "static/media/kozolec1.jpeg": "/toplar-website/static/media/kozolec1.6c7f2f1ba89863e163c5.jpeg",
+    "static/media/kozolec2.jpeg": "/toplar-website/static/media/kozolec2.7d8ec43d165279c7f070.jpeg",
     "static/media/toplar_burger2.jpg": "/toplar-website/static/media/toplar_burger2.af63904aed2c9d30fe06.jpg",
     "static/media/toplar_galerija7.jpg": "/toplar-website/static/media/toplar_galerija7.2000687d91ccb438f7d5.jpg",
     "static/media/toplar_galerija8.jpg": "/toplar-website/static/media/toplar_galerija8.38ff3762f3de3c263b83.jpg",
@@ -38,11 +52,11 @@
     "static/media/logo1.jpg": "/toplar-website/static/media/logo1.69a11e5b677ed00b1937.jpg",
     "static/media/toplar_logo.jpg": "/toplar-website/static/media/toplar_logo.234bb7d9ba13986bf45a.jpg",
     "index.html": "/toplar-website/index.html",
-    "main.e7b902b0.css.map": "/toplar-website/static/css/main.e7b902b0.css.map",
-    "main.ae69c463.js.map": "/toplar-website/static/js/main.ae69c463.js.map"
+    "main.e03a111e.css.map": "/toplar-website/static/css/main.e03a111e.css.map",
+    "main.9ef3ccf5.js.map": "/toplar-website/static/js/main.9ef3ccf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7b902b0.css",
-    "static/js/main.ae69c463.js"
+    "static/css/main.e03a111e.css",
+    "static/js/main.9ef3ccf5.js"
   ]
 }
