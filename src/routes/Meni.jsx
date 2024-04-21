@@ -65,7 +65,6 @@ function Meni() {
         cName="hero-mid"
         heroImg={Toplar6}
         title="Meni"
-        subtitle=""
         url="/meni"
         btnClass="hideBtn"
         buttonText="__"

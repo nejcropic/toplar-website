@@ -25,7 +25,7 @@ const HomeItem = ({ item }) => {
           <h2>{item.title2}</h2>
           <p>{item.body}</p>
           <div className="menuBtn">
-            <Link to="/meni">
+            <Link to={item.url}>
               <button>{item.gumb}</button>
             </Link>
           </div>

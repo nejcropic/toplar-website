@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./TopBar.css";
 
 function TopBar() {
+  const handleTab = () => {
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 0);
+  };
   return (
     <div className="topbar">
       <div className="topbar-container">
@@ -12,7 +17,7 @@ function TopBar() {
           </div>
           <span className="span">01-7886-833</span>
         </a>
-        <Link className="topbar-item">
+        <Link className="topbar-item" onClick={handleTab}>
           <div className="icon">
             <i className="fas fa-clock"></i>
           </div>

@@ -10,12 +10,20 @@ import { HomeItems } from "../components/Home/HomeItems";
 import HomeItem from "../components/Home/HomeItem";
 import ParkLokaHome from "../components/Home/ParkLokaHome";
 
+import {
+  sliderData,
+  sliderDataPhone,
+} from "../components/BackgroundSlider/BackgroundSliderData";
+
 function Home() {
   return (
     <>
       <TopBar />
       <NavBar />
-      <BackgroundSlider />
+      <BackgroundSlider
+        sliderData={sliderData}
+        sliderDataPhone={sliderDataPhone}
+      />
       <ScrollToTopButton />
       <ScrollDownButton />
       <div className="home-wrapper">

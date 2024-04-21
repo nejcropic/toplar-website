@@ -1,40 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./BackgroundSlider.css";
+import "./SliderLoka.css";
 import { motion } from "framer-motion";
 
 /* import { sliderData, sliderDataPhone } from "./BackgroundSliderData"; */
 
-const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
+const SliderLoka = ({ sliderData }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % getData().length);
+      setIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
     }, 5000); // Change image every 5 seconds
     return () => clearInterval(interval);
   }, []);
-
-  const getData = () =>
-    window.innerWidth <= 1000 ? sliderDataPhone : sliderData;
 
   const goToSlide = (slideIndex) => {
     setIndex(slideIndex);
   };
 
   const goToNext = () => {
-    setIndex((currentIndex) => (currentIndex + 1) % getData().length);
+    setIndex((currentIndex) => (currentIndex + 1) % sliderData.length);
   };
 
   const goToPrevious = () => {
     setIndex(
-      (currentIndex) => (currentIndex - 1 + getData().length) % getData().length
+      (currentIndex) =>
+        (currentIndex - 1 + sliderData.length) % sliderData.length
     );
   };
 
   return (
-    <div className="slider-show">
-      {getData().map((slide, i) => (
+    <div className="loka-slider-show">
+      {sliderData.map((slide, i) => (
         <motion.img
           key={i}
           src={slide.image}
@@ -43,33 +41,34 @@ const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
           animate={{ opacity: index === i ? 1 : 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          className="image"
+          className="loka-image"
         />
       ))}
-      <div className="slider-controls">
+      {/* <div className="loka-slider-controls">
         <button onClick={goToPrevious}>&lt;</button>
         <button onClick={goToNext}>&gt;</button>
-      </div>
-      <div className="slider-dots">
-        {getData().map((_, i) => (
+      </div> */}
+      <div className="loka-slider-dots">
+        {sliderData.map((_, i) => (
           <span
             key={i}
-            className={`dot ${i === index ? "active" : ""}`}
+            className={`loka-dot ${i === index ? "active" : ""}`}
             onClick={() => goToSlide(i)}
           ></span>
         ))}
       </div>
+      {/* 
       <div className="slider-text-container">
         <p>Dobrodošli na Dolenjskem!</p>
-        <h2>Dodaj stavek..</h2>
+        <h2>En kratek stavek..</h2>
       </div>
       <div className="menuBtnSlider">
         <Link to="/meni">
           <button>CENIK</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default BackgroundSlider;
+export default SliderLoka;

@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import App from "./App";
-
-import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
 import Logo from "./images/logo1.jpg";
 import Toplar1 from "./images/toplar1.jpg";
@@ -38,6 +37,14 @@ import Toplar_galerija9 from "./images/toplar_galerija9.jpg";
 import Toplar_galerija10 from "./images/toplar_galerija10.jpg";
 import ParkLoka1 from "./images/parkLoka1.jpeg";
 import ParkLoka2 from "./images/parkLoka2.jpeg";
+import ParkLoka3 from "./images/parkLoka3.jpg";
+import ParkLoka4 from "./images/parkloka4.jpg";
+import ParkLoka5 from "./images/parkloka5.jpg";
+import ParkLoka6 from "./images/parkloka6.jpg";
+import ParkLoka7 from "./images/parkloka7.jpg";
+import ParkLoka8 from "./images/parkloka8.jpg";
+import ParkLoka9 from "./images/parkloka9.jpg";
+import ParkLoka10 from "./images/parkloka10.jpg";
 import Toplar_logo from "./images/toplar_logo.jpg";
 import Toplar_temna from "./images/toplar_temna.jpg";
 
@@ -80,6 +87,14 @@ const PreloadImages = () => {
       Toplar_temna,
       ParkLoka1,
       ParkLoka2,
+      ParkLoka3,
+      ParkLoka4,
+      ParkLoka5,
+      ParkLoka6,
+      ParkLoka7,
+      ParkLoka8,
+      ParkLoka9,
+      ParkLoka10,
     ];
 
     imagesToPreload.forEach((imageSrc) => (new Image().src = imageSrc));
@@ -123,13 +138,22 @@ export {
   Toplar_temna,
   ParkLoka1,
   ParkLoka2,
+  ParkLoka3,
+  ParkLoka4,
+  ParkLoka5,
+  ParkLoka6,
+  ParkLoka7,
+  ParkLoka8,
+  ParkLoka9,
+  ParkLoka10,
 };
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <HashRouter>
-      <PreloadImages />
-      <App />
-    </HashRouter>
-  </React.StrictMode>
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <BrowserRouter>
+    <PreloadImages />
+    <App />
+  </BrowserRouter>
 );

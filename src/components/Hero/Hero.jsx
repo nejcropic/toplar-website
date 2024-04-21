@@ -25,7 +25,8 @@ function Hero(props) {
         className="hero-text"
       >
         <h1>{props.title}</h1>
-        <p>{props.subtitle}</p>
+        <p>{props.text}</p>
+
         <button className={props.btnClass} onClick={handleScrollDown}>
           {props.buttonText}
         </button>
