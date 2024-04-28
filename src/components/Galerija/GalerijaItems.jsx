@@ -5,5 +5,5 @@ export const GalerijaItems = importAll(
 ).map((image, index) => ({
   title: `Toplar${index + 1}`,
   image,
-  besedilo: "2017",
+  besedilo: "Toplar",
 }));

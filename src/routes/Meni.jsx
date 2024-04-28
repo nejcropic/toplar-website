@@ -8,6 +8,7 @@ import Footer from "../components/Footer/Footer";
 
 import { motion } from "framer-motion";
 import { mainAnimation, navAnimationPhone } from "../components/animations";
+import { useTranslation } from "react-i18next";
 
 import {
   Pizze,
@@ -33,6 +34,8 @@ import {
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton.jsx";
 
 function Meni() {
+  const { t } = useTranslation("global");
+
   const [showTab, setShowTab] = useState(1);
   const elementRef = useRef(null);
   const targetPosition = window.innerHeight;
@@ -64,7 +67,7 @@ function Meni() {
       <Hero
         cName="hero-mid"
         heroImg={Toplar6}
-        title="Meni"
+        title={t("navbar.menu")}
         url="/meni"
         btnClass="hideBtn"
         buttonText="__"
@@ -85,7 +88,7 @@ function Meni() {
                 onClick={() => handleTab(1)}
               >
                 <i class="fa-solid fa-pizza-slice"></i>
-                Pizze
+                {t("meni.buttons.pizze")}
               </button>
             </li>
             <li>
@@ -96,7 +99,7 @@ function Meni() {
                 onClick={() => handleTab(2)}
               >
                 <i class="fa-solid fa-burger"></i>
-                Burgerji
+                {t("meni.buttons.burgers")}
               </button>
             </li>
             <li>
@@ -107,7 +110,7 @@ function Meni() {
                 onClick={() => handleTab(3)}
               >
                 <i class="fa-solid fa-martini-glass"></i>
-                Pijače
+                {t("meni.buttons.drinks")}
               </button>
             </li>
             <li>
@@ -118,7 +121,7 @@ function Meni() {
                 onClick={() => handleTab(4)}
               >
                 <i class="fa-solid fa-cubes-stacked"></i>
-                Dodatki
+                {t("meni.buttons.extras")}
               </button>
             </li>
           </ul>
@@ -137,15 +140,15 @@ function Meni() {
           </div>
 
           <div className="meni-flex">
-            <h1>Pizze</h1>
+            <h1>{t("meni.buttons.pizze")}</h1>
             <div className="meni-divide">
               <div className="meni-pizza">
                 <div className="meni-velikosti-left">
                   <hr />
                 </div>
                 <div className="meni-velikosti">
-                  <h2>Mala</h2>
-                  <h2>Velika</h2>
+                  <h2>{t("meni.pizze.size1")}</h2>
+                  <h2>{t("meni.pizze.size2")}</h2>
                 </div>
               </div>
               <div className="meni-pizza show-pizza">
@@ -153,8 +156,8 @@ function Meni() {
                   <hr />
                 </div>
                 <div className="meni-velikosti">
-                  <h2>Mala</h2>
-                  <h2>Velika</h2>
+                  <h2>{t("meni.pizze.size1")}</h2>
+                  <h2>{t("meni.pizze.size2")}</h2>
                 </div>
               </div>
             </div>
@@ -164,7 +167,7 @@ function Meni() {
                   <div className="meni-content" key={index}>
                     <div className="meni-content-burger">
                       <div className="meni-title">
-                        <h3>{item.title}</h3>
+                        <h3>{t(item.title)}</h3>
                         {/* <h4>{item.alergeni}</h4> */}
                       </div>
                       <div className=" pizza-line">
@@ -177,7 +180,7 @@ function Meni() {
                         <h3>{item.cenaVelika}€</h3>
                       </div>
                     </div>
-                    <p>{item.sestavine}</p>
+                    <p>{t(item.sestavine)}</p>
                   </div>
                 );
               })}
@@ -204,7 +207,7 @@ function Meni() {
                   <div className="meni-content" key={index}>
                     <div className="meni-content-burger">
                       <div className="meni-title">
-                        <h3>{item.title}</h3>
+                        <h3>{t(item.title)}</h3>
                         {/* 
                         <h4>{item.alergeni}</h4> */}
                       </div>
@@ -215,7 +218,7 @@ function Meni() {
                         <h3>{item.cena}€</h3>
                       </div>
                     </div>
-                    <p>{item.sestavine}</p>
+                    <p>{t(item.sestavine)}</p>
                   </div>
                 );
               })}

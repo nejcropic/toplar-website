@@ -4,19 +4,18 @@ import ParkLoka from "../../images/parkLoka3.jpg";
 export const HomeItems = [
   {
     image: Toplar_galerija10,
-    title: "Zabave za zaključene družbe",
-    title2: "Rezerviraj ..",
-    body: " Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo",
-    gumb: "Poglej meni",
+    titleKey: "home.events.title",
+    title2Key: "home.events.subtitle",
+    bodyKey: "home.events.description",
+    buttonKey: "home.events.button",
     url: "/meni",
   },
   {
     image: ParkLoka,
-    title: "Park Loka",
-    title2: "Najemi Park Loko",
-    body: " Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo Dodaj besedilo",
-    gumb: "Razišči več",
+    titleKey: "home.park.title",
+    title2Key: "home.park.subtitle",
+    bodyKey: "home.park.description",
+    buttonKey: "home.park.button",
     url: "/loka",
   },
-  ,
 ];

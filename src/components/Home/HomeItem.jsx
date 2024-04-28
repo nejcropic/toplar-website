@@ -1,11 +1,13 @@
-// HomeItem.js
+// HomeItem.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
 
 const HomeItem = ({ item }) => {
+  const { t } = useTranslation("global");
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3,
@@ -21,17 +23,17 @@ const HomeItem = ({ item }) => {
         className="home-flex"
       >
         <div className="home-text">
-          <h3>{item.title}</h3>
-          <h2>{item.title2}</h2>
-          <p>{item.body}</p>
+          <h3>{t(item.titleKey)}</h3>
+          <h2>{t(item.title2Key)}</h2>
+          <p>{t(item.bodyKey)}</p>
           <div className="menuBtn">
             <Link to={item.url}>
-              <button>{item.gumb}</button>
+              <button>{t(item.buttonKey)}</button>
             </Link>
           </div>
         </div>
         <div className="home-image">
-          <img src={item.image} alt="Toplar" />
+          <img src={item.image} alt={t(item.titleKey)} />
         </div>
       </motion.div>
       <hr />

@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import "./BackgroundSlider.css";
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 /* import { sliderData, sliderDataPhone } from "./BackgroundSliderData"; */
 
 const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
+  const { t } = useTranslation("global");
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -60,12 +64,12 @@ const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
         ))}
       </div>
       <div className="slider-text-container">
-        <p>Dobrodošli na Dolenjskem!</p>
-        <h2>Dodaj stavek..</h2>
+        <p>{t("backgroundslider.sliderp")}</p>
+        <h2>{t("backgroundslider.sliderh")}</h2>
       </div>
       <div className="menuBtnSlider">
         <Link to="/meni">
-          <button>CENIK</button>
+          <button>{t("backgroundslider.menu")}</button>
         </Link>
       </div>
     </div>

@@ -27,7 +27,8 @@
 /* -------------------------IMAGE------------------- */
 .image-meni {
     width: 45%;
-    margin: 5rem 1rem 2rem 0;
+    margin: auto 1rem;
+    align-items: center;
 }
 .image-meni h1 {
     position: relative;

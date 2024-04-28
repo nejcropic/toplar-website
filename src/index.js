@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import App from "./App";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
-
 import Logo from "./images/logo1.jpg";
 import Toplar1 from "./images/toplar1.jpg";
 import Toplar2 from "./images/toplar2.jpg";
@@ -47,6 +46,28 @@ import ParkLoka9 from "./images/parkloka9.jpg";
 import ParkLoka10 from "./images/parkloka10.jpg";
 import Toplar_logo from "./images/toplar_logo.jpg";
 import Toplar_temna from "./images/toplar_temna.jpg";
+
+import translate_si from "./components/translations/si/translations.json";
+import translate_en from "./components/translations/en/translations.json";
+import translate_de from "./components/translations/de/translations.json";
+import i18next from "i18next";
+import { I18nextProvider } from "react-i18next";
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  lng: "si",
+  resources: {
+    si: {
+      global: translate_si,
+    },
+    en: {
+      global: translate_en,
+    },
+    de: {
+      global: translate_de,
+    },
+  },
+});
 
 const PreloadImages = () => {
   useEffect(() => {
@@ -152,7 +173,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
       <PreloadImages />
-      <App />
+      <I18nextProvider i18n={i18next}>
+        <App />
+      </I18nextProvider>
     </HashRouter>
   </React.StrictMode>
 );

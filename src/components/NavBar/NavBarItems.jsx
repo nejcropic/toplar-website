@@ -1,31 +1,32 @@
+// NavBarItems.jsx
 export const NavBarItems = [
   {
-    title: "Domov",
+    key: "home",
     url: "/",
     cName: "nav-links",
   },
   {
-    title: "Meni",
+    key: "menu",
     url: "/meni",
     cName: "nav-links",
   },
   {
-    title: "Pizzerija Toplar",
+    key: "toplar",
     url: "/",
     cName: "nav-links nav-toplar",
   },
   {
-    title: "O nas",
+    key: "about",
     url: "/onas",
     cName: "nav-links",
   },
   {
-    title: "Galerija",
+    key: "gallery",
     url: "/galerija",
     cName: "nav-links",
   },
   {
-    title: "Park Loka",
+    key: "park",
     url: "/loka",
     cName: "nav-links nav-loka",
   },

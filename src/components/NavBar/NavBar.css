@@ -1,19 +1,36 @@
 .nav-group {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 80px;
     background-color: var(--transparentBlackColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
-    height: 80px;
     border-radius: 0 0 13px 13px;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
     transition: 0.3s linear;
     z-index: 55;
 }
+
+.lokaNav-container {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    height: 80px;
+    background-color: var(--transparentBlackColor);
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    font-family: var(--fontFamily-forum);
+    font-weight: var(--weight-bold);
+    transition: 0.3s linear;
+    z-index: 999;
+}
+
 .nav-bg{
     top: -80px;
     transition: 0.3s linear;
@@ -80,7 +97,7 @@
     background-color: var(--transparentBlackColor);
     position: absolute;
     width: 80%;
-    top: 20px;
+    top: 30px;
     left: 0%;
     text-align: left;
     padding: 0 30px 0 30px;
@@ -94,8 +111,8 @@
     object-fit: fill;
 }
 .menu-titles {
-    font-family: var(--fontFamily-forum);
-    font-size: 2rem;
+    font-family: var(--fontFamily-toplar);
+    font-size: 2.5rem;
 }
 @media only screen and (max-width: 1024px) {
     .nav-group {
@@ -182,23 +199,11 @@
     }
 }
 
-.lokaNav-container {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 200px;
-    height: 80px;
-    z-index: 999;
-    background-color: var(--transparentBlackColor);
-    justify-content: center;
-    align-items: center;
-    padding: 18px 30px;
-    font-family: var(--fontFamily-forum);
-    font-weight: var(--weight-bold);
-}
+
 
 @media only screen and (max-width: 1024px) {
     .lokaNav-container{
         display: none;
     }
 }
+

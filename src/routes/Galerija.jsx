@@ -4,12 +4,15 @@ import TopBar from "../components/TopBar/TopBar";
 import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
 import { Toplar13 } from "../index";
 import { GalerijaItems } from "../components/Galerija/GalerijaItems";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 
 function Galerija() {
+  const { t } = useTranslation("global");
+
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
@@ -49,11 +52,11 @@ function Galerija() {
       <Hero
         cName="hero"
         heroImg={Toplar13}
-        title="Galerija"
+        title={t("navbar.gallery")}
         subtitle="Ogled prekrasne galerije!"
         url="/galerija"
         btnClass="showBtn"
-        buttonText="Poglej več"
+        buttonText={t("hero.gallery")}
       />
       <div className="galerija-wrapper">
         {openModal && (

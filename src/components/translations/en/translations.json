@@ -1,0 +1,15 @@
+{
+  "backgroundslider": {
+      "sliderp":"Welcome to Dolenjska!",
+      "sliderh": "Add sentence.."
+  },
+  "navbar": {
+      "pizzerija-naslov": "Pizzeria",
+      "home": "Home",
+      "menu": "Menu",
+      "toplar": "Pizzeria Toplar",
+      "about": "About",
+      "gallery": "Galerry",
+      "park": "Park Loka"
+    }
+}
