@@ -1,4 +1,24 @@
-export const TopliNapitki = [
+export const DrugaPonudba = [
+  {
+    title: "Toast s šunko in sirom",
+    alergeni: "1, 3, 5, 8 ,9",
+    sestavine: "",
+    cena: "4,30",
+  },
+  {
+    title: "Klobasa",
+    alergeni: "1, 5, 8, 9, 12",
+    sestavine: "",
+    cena: "8,80",
+  },
+  {
+    title: "Sladoled",
+    alergeni: "1, 3, 5, 7, 9",
+    sestavine: "",
+    cena: "2,50",
+  },
+];
+/* export const TopliNapitki = [
   {
     title: "Kava espresso",
     alergeni: "",
@@ -107,9 +127,9 @@ export const TopliNapitki = [
     sestavine: "",
     cena: "2,50",
   },
-];
+]; */
 
-export const BrezalkoholnePijace = [
+/* export const BrezalkoholnePijace = [
   {
     title: "Voda",
     alergeni: "",
@@ -512,7 +532,7 @@ export const Viskiji = [
     kolicina: "0,03l",
     cena: "2,80",
   },
-];
+]; */
 
 export const Burgerji = [
   {

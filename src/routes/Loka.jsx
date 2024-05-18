@@ -81,6 +81,7 @@ function Loka() {
             </div>
           </div>
         </div>
+        <h4>{t("loka.subtitle")}</h4>
         <div className={showTab === 1 ? "loka-item show-item" : "loka-item"}>
           <h2>{t("loka.kasca.title")}</h2>
           <div className="loka-flex">
@@ -107,7 +108,7 @@ function Loka() {
           <h2>{t("loka.loka.title")}</h2>
           <div className="loka-flex ">
             <img src={ParkLoka5} alt="Park Loka" />
-            <p>{t("loka.loka.text")}</p>
+            <pre>{t("loka.loka.text")}</pre>
           </div>
           <div className="loka-galerija">
             <p>{t("loka.gallery")}:</p>

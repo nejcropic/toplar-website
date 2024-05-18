@@ -19,21 +19,16 @@ import Toplar13 from "./images/toplar13.jpg";
 import Toplar14 from "./images/toplar14.jpg";
 import Toplar15 from "./images/toplar15.jpg";
 import Toplar16 from "./images/toplar16.jpg";
-import Toplar_brezalkoholne from "./images/toplar_galerija2.jpg";
-import Toplar_alkoholne from "./images/toplar_galerija3.jpg";
-import Toplar_burger from "./images/toplar_burger.jpg";
-import Toplar_burger2 from "./images/toplar_burger2.jpg";
-import Toplar_pizze from "./images/toplar_pizze.jpg";
-import Toplar_galerija1 from "./images/toplar_galerija1.jpg";
-import Toplar_galerija2 from "./images/toplar_galerija2.jpg";
-import Toplar_galerija3 from "./images/toplar_galerija3.jpg";
-import Toplar_galerija4 from "./images/toplar_galerija4.jpg";
-import Toplar_galerija5 from "./images/toplar_galerija5.jpg";
-import Toplar_galerija6 from "./images/toplar_galerija6.jpg";
-import Toplar_galerija7 from "./images/toplar_galerija7.jpg";
-import Toplar_galerija8 from "./images/toplar_galerija8.jpg";
-import Toplar_galerija9 from "./images/toplar_galerija9.jpg";
-import Toplar_galerija10 from "./images/toplar_galerija10.jpg";
+import Toplar17 from "./images/toplar17.jpg";
+import Toplar18 from "./images/toplar18.jpg";
+import Toplar19 from "./images/toplar19.jpg";
+import Toplar20 from "./images/toplar20.jpg";
+import Toplar21 from "./images/toplar21.jpg";
+import Toplar22 from "./images/toplar22.jpg";
+import Toplar23 from "./images/toplar23.jpg";
+import Toplar24 from "./images/toplar24.jpg";
+import Toplar25 from "./images/toplar25.jpg";
+import Toplar26 from "./images/toplar26.jpg";
 import ParkLoka1 from "./images/parkLoka1.jpeg";
 import ParkLoka2 from "./images/parkLoka2.jpeg";
 import ParkLoka3 from "./images/parkLoka3.jpg";
@@ -44,8 +39,15 @@ import ParkLoka7 from "./images/parkloka7.jpg";
 import ParkLoka8 from "./images/parkloka8.jpg";
 import ParkLoka9 from "./images/parkloka9.jpg";
 import ParkLoka10 from "./images/parkloka10.jpg";
-import Toplar_logo from "./images/toplar_logo.jpg";
-import Toplar_temna from "./images/toplar_temna.jpg";
+import ParkLoka11 from "./images/parkloka11.jpeg";
+import ParkLoka12 from "./images/parkloka12.jpeg";
+import ParkLoka13 from "./images/parkloka13.jpeg";
+import ParkLoka14 from "./images/parkloka14.jpeg";
+import Hrana1 from "./images/hrana1.jpg";
+import Hrana2 from "./images/hrana2.jpg";
+import Hrana3 from "./images/hrana3.jpg";
+import Hrana4 from "./images/hrana4.jpg";
+import Hrana5 from "./images/hrana5.jpg";
 
 import translate_si from "./components/translations/si/translations.json";
 import translate_en from "./components/translations/en/translations.json";
@@ -89,23 +91,16 @@ const PreloadImages = () => {
       Toplar14,
       Toplar15,
       Toplar16,
-      Toplar_brezalkoholne,
-      Toplar_alkoholne,
-      Toplar_burger,
-      Toplar_burger2,
-      Toplar_pizze,
-      Toplar_galerija1,
-      Toplar_galerija2,
-      Toplar_galerija3,
-      Toplar_galerija4,
-      Toplar_galerija5,
-      Toplar_galerija6,
-      Toplar_galerija7,
-      Toplar_galerija8,
-      Toplar_galerija9,
-      Toplar_galerija10,
-      Toplar_logo,
-      Toplar_temna,
+      Toplar17,
+      Toplar18,
+      Toplar19,
+      Toplar20,
+      Toplar21,
+      Toplar22,
+      Toplar23,
+      Toplar24,
+      Toplar25,
+      Toplar26,
       ParkLoka1,
       ParkLoka2,
       ParkLoka3,
@@ -116,6 +111,15 @@ const PreloadImages = () => {
       ParkLoka8,
       ParkLoka9,
       ParkLoka10,
+      ParkLoka11,
+      ParkLoka12,
+      ParkLoka13,
+      ParkLoka14,
+      Hrana1,
+      Hrana2,
+      Hrana3,
+      Hrana4,
+      Hrana5,
     ];
 
     imagesToPreload.forEach((imageSrc) => (new Image().src = imageSrc));
@@ -140,23 +144,16 @@ export {
   Toplar14,
   Toplar15,
   Toplar16,
-  Toplar_brezalkoholne,
-  Toplar_alkoholne,
-  Toplar_burger,
-  Toplar_burger2,
-  Toplar_pizze,
-  Toplar_galerija1,
-  Toplar_galerija2,
-  Toplar_galerija3,
-  Toplar_galerija4,
-  Toplar_galerija5,
-  Toplar_galerija6,
-  Toplar_galerija7,
-  Toplar_galerija8,
-  Toplar_galerija9,
-  Toplar_galerija10,
-  Toplar_logo,
-  Toplar_temna,
+  Toplar17,
+  Toplar18,
+  Toplar19,
+  Toplar20,
+  Toplar21,
+  Toplar22,
+  Toplar23,
+  Toplar24,
+  Toplar25,
+  Toplar26,
   ParkLoka1,
   ParkLoka2,
   ParkLoka3,
@@ -167,6 +164,15 @@ export {
   ParkLoka8,
   ParkLoka9,
   ParkLoka10,
+  ParkLoka11,
+  ParkLoka12,
+  ParkLoka13,
+  ParkLoka14,
+  Hrana1,
+  Hrana2,
+  Hrana3,
+  Hrana4,
+  Hrana5,
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(

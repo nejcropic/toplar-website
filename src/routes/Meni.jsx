@@ -13,24 +13,10 @@ import { useTranslation } from "react-i18next";
 import {
   Pizze,
   Burgerji,
-  TopliNapitki,
   Dodatki,
-  Alergeni,
-  BrezalkoholnePijace,
-  Pivo,
-  Vino,
-  Zgane,
-  Viskiji,
+  DrugaPonudba,
 } from "../components/Meni/MeniItems.jsx";
-import {
-  Toplar6,
-  Toplar_pizze,
-  Toplar_burger,
-  Toplar_burger2,
-  Toplar_brezalkoholne,
-  Toplar_alkoholne,
-  Toplar_galerija7,
-} from "../index";
+import { Toplar6, Hrana1, Hrana2, Hrana3, Hrana5, Toplar5 } from "../index";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton.jsx";
 
 function Meni() {
@@ -66,7 +52,7 @@ function Meni() {
       <ScrollToTopButton />
       <Hero
         cName="hero-mid"
-        heroImg={Toplar6}
+        heroImg={Toplar5}
         title={t("navbar.menu")}
         url="/meni"
         btnClass="hideBtn"
@@ -136,7 +122,7 @@ function Meni() {
           className={showTab === 1 ? "meni-item show" : "meni-item"}
         >
           <div className="image-meni">
-            <img src={Toplar_pizze} alt="" className="image-meni-sub" />
+            <img src={Hrana5} alt="" className="image-meni-sub" />
           </div>
 
           <div className="meni-flex">
@@ -197,7 +183,7 @@ function Meni() {
           className={showTab === 2 ? "meni-item show" : "meni-item"}
         >
           <div className="image-meni">
-            <img src={Toplar_burger} alt="" className="image-meni-sub" />
+            <img src={Hrana1} alt="" className="image-meni-sub" />
           </div>
           <div className="meni-flex">
             <h1>Burgerji</h1>
@@ -229,15 +215,15 @@ function Meni() {
         <hr
           className={showTab === 2 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* brezalkoholne */}
+
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
-            <img src={Toplar_brezalkoholne} alt="" className="image-meni-sub" />
+            <img src={Hrana2} alt="" className="image-meni-sub" />
           </div>
           <div className="meni-flex">
-            <h1>Brezalkoholne pijače</h1>
+            <h1>Druga ponudba</h1>
             <div className="meni-divide">
-              {BrezalkoholnePijace.map((item, index) => {
+              {DrugaPonudba.map((item, index) => {
                 return (
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
@@ -262,8 +248,7 @@ function Meni() {
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* pivo */}
-        <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
+        {/* <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
             <img src={Toplar_alkoholne} alt="" className="image-meni-sub" />
           </div>
@@ -275,7 +260,7 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {/* {item.alergeni} */}
+                        {item.title} {/* {item.alergeni} 
                       </h3>
                     </div>
                     <div className="meni-line">
@@ -294,7 +279,6 @@ function Meni() {
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* vino */}
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
             <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
@@ -308,7 +292,7 @@ function Meni() {
                     <div className="meni-title">
                       <h3>{item.title}</h3>
                       {/* 
-                      <h4>{item.alergeni}</h4> */}
+                      <h4>{item.alergeni}</h4> 
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -326,7 +310,6 @@ function Meni() {
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* zgane */}
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
             <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
@@ -340,7 +323,7 @@ function Meni() {
                     <div className="meni-title">
                       <h3>{item.title}</h3>
                       {/* 
-                      <h4>{item.alergeni}</h4> */}
+                      <h4>{item.alergeni}</h4> 
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -358,7 +341,6 @@ function Meni() {
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* viskiji */}
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
             <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
@@ -372,7 +354,7 @@ function Meni() {
                     <div className="meni-title">
                       <h3>{item.title}</h3>
                       {/* 
-                      <h4>{item.alergeni}</h4> */}
+                      <h4>{item.alergeni}</h4> 
                     </div>
                     <div className="meni-line">
                       <hr />
@@ -390,7 +372,6 @@ function Meni() {
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* topli napitki */}
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
             <img src={Toplar_alkoholne} alt="" className="image-meni-sub" />
@@ -403,7 +384,7 @@ function Meni() {
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title} {/* {item.alergeni} */}
+                        {item.title} {/* {item.alergeni} 
                       </h3>
                     </div>
                     <div className="meni-line">
@@ -420,11 +401,11 @@ function Meni() {
         </div>
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        />
+        /> 
         {/* alergeni */}
         <div className={showTab === 4 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
-            <img src={Toplar_burger2} alt="" className="image-meni-sub" />
+            <img src={Hrana3} alt="" className="image-meni-sub" />
           </div>
           <div className="meni-flex">
             <h1>Dodatki</h1>

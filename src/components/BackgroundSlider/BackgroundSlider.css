@@ -95,7 +95,7 @@
 }
 .slider-text-container p{
   width: 70%;
-  font-size: 2rem;/* 
+  font-size: 3rem;/* 
   border: 1px solid var(--mainColor);
   border-radius: 4px; 
   background-color: var(--transparentBlackColor);
@@ -105,16 +105,8 @@
   text-shadow: 1px 1px #000;
   padding-bottom: 1rem;
 }
-.slider-text-container h2{
-  color:var(--white);
-  font-size: 2.6rem;
-  text-shadow: 1px 1px #000;
-}
 @media screen and (max-width: 1000px) {
   .slider-text-container p{
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }  
-  .slider-text-container h2{
-    font-size: 1.8rem;
-  }
 }

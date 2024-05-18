@@ -66,17 +66,22 @@
     width: 50%;
 }
 
-.home-text h2, .home-text h3, .home-text p {
+.home-text h2, .home-text h3, .home-text pre {
     font-size: var(--fontSizePc);
     color: var(--white);
     padding: 0.5rem 0;
+    font-family: inherit; /* Use the same font as the surrounding text */
+    white-space: pre-wrap; /* Wrap text to fit the container width */
+    word-wrap: break-word; /* Break long words to fit the container width */
+    background: none; /* Remove the default background */
+    border: none; /* Remove the default border */
 } 
 .home-text h2{
     color: var(--mainColor);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-.home-text p{
+.home-text pre{
     color: var(--white);    
 }
 @media screen and (max-width: 1000px) {
@@ -89,7 +94,7 @@
     .home-text h2 {
         font-size: 1.5rem;
     }
-    .home-text p {
+    .home-text pre {
         font-size: var(--fontSizePhone);
     }
 }

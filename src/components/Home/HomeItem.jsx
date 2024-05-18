@@ -25,7 +25,7 @@ const HomeItem = ({ item }) => {
         <div className="home-text">
           <h3>{t(item.titleKey)}</h3>
           <h2>{t(item.title2Key)}</h2>
-          <p>{t(item.bodyKey)}</p>
+          <pre>{t(item.bodyKey)}</pre>
           <div className="menuBtn">
             <Link to={item.url}>
               <button>{t(item.buttonKey)}</button>

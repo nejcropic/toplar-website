@@ -1,9 +1,9 @@
-import Toplar_galerija10 from "../../images/toplar_galerija10.jpg";
+import Toplar24 from "../../images/toplar24.jpg";
 import ParkLoka from "../../images/parkLoka3.jpg";
 
 export const HomeItems = [
   {
-    image: Toplar_galerija10,
+    image: Toplar24,
     titleKey: "home.events.title",
     title2Key: "home.events.subtitle",
     bodyKey: "home.events.description",

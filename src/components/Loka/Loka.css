@@ -7,17 +7,30 @@
 }
 .loka-wrapper h2{
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
     color: var(--mainColor);
     font-size: 3rem;
 }
+.loka-wrapper h4{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: var(--white );
+    font-size: 2rem;
+}
 @media screen and (max-width: 1000px) {
     .loka-wrapper h2{
         top: 20px;
         font-size: 2rem;
+    }
+    .loka-wrapper h4{
+        top: 10%;
+        font-size: 1.2rem;
     }
   }
 .loka-background {
@@ -28,6 +41,12 @@
     filter: blur(2px);
     min-height: 100vh;
 }
+@media screen and (max-width: 1000px) {
+    .loka-background {
+        min-height: 110vh;
+    }
+  }
+
 .loka-container {
     position: absolute;
     justify-content: center; /* Center align the items vertically */
@@ -119,11 +138,16 @@
     display: flex;
     flex-direction: row;
 }
-.loka-flex p{
+.loka-flex p, .loka-flex pre{
     color: var(--mainColor);
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 1rem;
     width: 50%;
+    font-family: inherit; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    background: none; 
+    border: none; 
 }
 .loka-galerija {
     width: 100%;
@@ -148,7 +172,7 @@
     .loka-flex{
         flex-direction: column;
     }
-    .loka-flex p{
+    .loka-flex p,.loka-flex pre{
         width: 100%;
         font-size: 1.2rem;
         padding: 2rem;

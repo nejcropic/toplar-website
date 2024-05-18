@@ -15,7 +15,7 @@
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
-.onas-container p{
+.onas-container p, .onas-container pre{
     font-size: 1.2rem;
 }
 .onas-container img{
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
 }
-.onas-flex p{
+.onas-flex p, .onas-flex pre{
     padding: 1rem;
     width: 50%;
 }
@@ -36,8 +36,13 @@
     flex-direction: row-reverse;
     background-color: var(--mainColor);
 }
-.reverse p{
+.reverse p, .reverse pre{
     color: var(--smoky-black-1);
+    font-family: inherit; /* Use the same font as the surrounding text */
+    white-space: pre-wrap; /* Wrap text to fit the container width */
+    word-wrap: break-word; /* Break long words to fit the container width */
+    background: none; /* Remove the default background */
+    border: none; /* Remove the default border */
 }
 @media screen and (max-width: 1000px) {
     .onas-container {
@@ -49,7 +54,7 @@
     .onas-flex{
         flex-direction: column;
     }
-    .onas-flex p{
+    .onas-flex p,.onas-flex pre{
         width: 100%;
     }
   }

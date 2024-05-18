@@ -64,8 +64,10 @@ const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
         ))}
       </div>
       <div className="slider-text-container">
-        <p>{t("backgroundslider.sliderp")}</p>
-        <h2>{t("backgroundslider.sliderh")}</h2>
+        <p>
+          {t("backgroundslider.sliderp")}
+          <i className="fas fa-heart"></i>
+        </p>
       </div>
       <div className="menuBtnSlider">
         <Link to="/meni">

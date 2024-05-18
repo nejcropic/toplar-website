@@ -11,7 +11,7 @@ function Footer() {
         <div className="sb_footer">
           <div className="sb_footer-links">
             <h2>{t("footer.title")} TOPLAR</h2>
-            <p>Zagradec 5</p>
+            <p>Zagradec 5b</p>
             <p>1303 Zagradec, {t("footer.address")}</p>
           </div>
           <div className="line-div"></div>

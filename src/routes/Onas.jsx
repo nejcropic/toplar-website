@@ -6,7 +6,7 @@ import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 
-import { ParkLoka1, Toplar15, Toplar_galerija10, Toplar_temna } from "../index";
+import { ParkLoka7, Toplar26, Toplar22, Toplar24, Toplar17 } from "../index";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 
 function Onas() {
@@ -19,7 +19,7 @@ function Onas() {
       <ScrollToTopButton />
       <Hero
         cName="hero"
-        heroImg={Toplar15}
+        heroImg={Toplar26}
         title={t("navbar.about")}
         subtitle="Kratek opis .."
         url="/onas"
@@ -34,7 +34,7 @@ function Onas() {
               <br />
               <br />
             </p>
-            <img src={Toplar_temna} alt="" />
+            <img src={Toplar22} alt="" />
           </div>
           {/* <div className="onas-flex">
             <p>
@@ -50,11 +50,15 @@ function Onas() {
           </div> */}
           <div className="onas-flex">
             <p>{t("about.text2")}</p>
-            <img src={Toplar_galerija10} alt="" />
+            <img src={Toplar24} alt="" />
           </div>
           <div className="onas-flex reverse">
-            <p>{t("about.text3")}</p>
-            <img src={ParkLoka1} alt="" />
+            <pre>{t("about.text3")}</pre>
+            <img src={Toplar17} alt="" />
+          </div>
+          <div className="onas-flex">
+            <p>{t("about.text4")}</p>
+            <img src={ParkLoka7} alt="" />
           </div>
         </div>
       </div>

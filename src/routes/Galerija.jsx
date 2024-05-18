@@ -7,7 +7,11 @@ import Footer from "../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 
 import { Toplar13 } from "../index";
-import { GalerijaItems } from "../components/Galerija/GalerijaItems";
+import {
+  GalerijaItemsT,
+  GalerijaItemsP,
+  GalerijaItemsH,
+} from "../components/Galerija/GalerijaItems";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 
 function Galerija() {
@@ -16,8 +20,8 @@ function Galerija() {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
-  const handleOpenModal = (index) => {
-    setSlideNumber(index);
+  const handleOpenModal = (index, offset) => {
+    setSlideNumber(index + offset);
     setOpenModal(true);
   };
 
@@ -27,22 +31,48 @@ function Galerija() {
 
   const prevSlide = () => {
     slideNumber === 0
-      ? setSlideNumber(GalerijaItems.length - 1)
+      ? setSlideNumber(
+          GalerijaItemsT.length +
+            GalerijaItemsP.length +
+            GalerijaItemsH.length -
+            1
+        )
       : setSlideNumber(slideNumber - 1);
   };
 
   const nextSlide = () => {
-    slideNumber + 1 === GalerijaItems.length
+    slideNumber + 1 ===
+    GalerijaItemsT.length + GalerijaItemsP.length + GalerijaItemsH.length
       ? setSlideNumber(0)
       : setSlideNumber(slideNumber + 1);
   };
 
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
-      // Checks if the click is directly on the overlay, not on child elements
       handleCloseModal();
     }
   };
+
+  const renderGalerijaItems = (items, offset) => {
+    return items.map((item, index) => (
+      <div
+        className="single"
+        key={index}
+        onClick={() => handleOpenModal(index, offset)}
+      >
+        <img src={item.image} alt={item.title} />
+      </div>
+    ));
+  };
+
+  const combinedItems = [
+    ...GalerijaItemsT,
+    ...GalerijaItemsP,
+    ...GalerijaItemsH,
+  ];
+  const offsetT = 0;
+  const offsetP = GalerijaItemsT.length;
+  const offsetH = GalerijaItemsT.length + GalerijaItemsP.length;
 
   return (
     <>
@@ -62,7 +92,6 @@ function Galerija() {
         {openModal && (
           <div className="slider-container" onClick={handleOverlayClick}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              {/* Close, Previous, and Next buttons here */}
               <i
                 className="fas fa-chevron-left btnPrev"
                 onClick={prevSlide}
@@ -75,29 +104,29 @@ function Galerija() {
                 className="fas fa-times btnClose"
                 onClick={handleCloseModal}
               ></i>
-              {/* Image Display */}
               <div className="fullScreenImage">
                 <img
-                  src={GalerijaItems[slideNumber].image}
-                  alt={GalerijaItems[slideNumber].title}
+                  src={combinedItems[slideNumber].image}
+                  alt={combinedItems[slideNumber].title}
                 />
               </div>
             </div>
           </div>
         )}
 
+        <h2>{t("gallery.text1")}</h2>
         <div className="galerija-container">
-          {GalerijaItems.map((item, index) => {
-            return (
-              <div
-                className="single"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={item.image} alt="" />
-              </div>
-            );
-          })}
+          {renderGalerijaItems(GalerijaItemsT, offsetT)}
+        </div>
+
+        <h2>{t("gallery.text2")}</h2>
+        <div className="galerija-container">
+          {renderGalerijaItems(GalerijaItemsP, offsetP)}
+        </div>
+
+        <h2>{t("gallery.text3")}</h2>
+        <div className="galerija-container">
+          {renderGalerijaItems(GalerijaItemsH, offsetH)}
         </div>
       </div>
       <Footer />
