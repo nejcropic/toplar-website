@@ -35,11 +35,15 @@ export const MeniButtonAnimation = {
     opacity: 0,
     y: "30vh",
     x: "-50%",
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
   },
   show: {
     opacity: 1,
     y: 0,
-    x: "-50%",
+    x: 0,
     transition: {
       duration: 0.5,
       ease: "easeInOut",

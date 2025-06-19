@@ -5,26 +5,40 @@ import { MeniButtonAnimation } from "../animations.jsx";
 
 function ScrollToTopButton() {
   const [showButton, setButton] = useState(false);
+  const [scrollValue, setScrollValue] = useState(0);
 
   useEffect(() => {
-    const hideButton = () => {
-      // Show button when user has scrolled down 100px (for example) from the top of the document
-      if (window.scrollY > 100) {
+    const handleScroll = () => {
+      const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrollProgress = Math.round((scrollTop * 100) / scrollHeight);
+
+      setScrollValue(scrollProgress);
+
+      if (scrollTop > window.innerHeight - window.innerHeight / 3) {
         setButton(true);
       } else {
         setButton(false);
       }
     };
 
-    // Listen for scroll events
-    window.addEventListener("scroll", hideButton);
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check to set the correct state on page load
+    handleScroll();
 
     // Cleanup the event listener on component unmount
-    return () => window.removeEventListener("scroll", hideButton);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -33,9 +47,12 @@ function ScrollToTopButton() {
       initial="hidden"
       animate={showButton ? "show" : "hidden"}
       className={showButton ? "scrollBtnSlider show" : "scrollBtnSlider hide"}
+      style={{
+        background: `conic-gradient(var(--mainColor) ${scrollValue}%, #d7d7d7 ${scrollValue}%)`,
+      }}
     >
-      <button onClick={handleScrollToTop}>
-        <i className="fas fa-arrow-up"></i>
+      <button onClick={handleScrollToTop} className="scrollButton">
+        <i class="fa-solid fa-chevron-up"></i>
       </button>
     </motion.div>
   );

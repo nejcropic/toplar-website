@@ -1,45 +1,55 @@
 .scrollBtnSlider {
-    position: fixed;
-    bottom: 5%;
-    right: 0%;
-    height: 3rem;
-    width: 3rem;
-    z-index: 999;
+  position: fixed;
+  bottom: 1rem;
+  right: 5%;
+  height: 3rem;
+  width: 3rem;
+  z-index: 999;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.scrollBtnSlider button{
-    display: block;
-    margin: 0 ;
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-    background-color: var(--mainColor);
-    color: var(--eerie-black-1);
-    border: 1px solid black;
-    border-radius: 2px;
+.scrollButton {
+  position: relative;
+  top: 0.5rem;
+  height: calc(100% - 1rem);
+  width: calc(100% - 1rem);
+  background-color: var(--mainColor);
+  color: var(--eerie-black-1);
+  border: none; /* Remove border from button */
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
-.scrollBtnSlider button:hover{
-    background-color: var(--eerie-black-1);
-    color: var(--mainColor);
-    border: 1px solid var(--mainColor);
+.scrollButton:hover {
+  background-color: var(--eerie-black-1);
+  color: var(--mainColor);
+}
+
+.scrollButton i {
+  pointer-events: none;
+  color: var(--eerie-black-1);
 }
 
 @media screen and (max-width: 1000px) {
-    .scrollBtnSlider button:hover{
-        background-color: var(--mainColor);
-    }
-    .scrollBtnSlider button i:hover{
-        color: var(--eerie-black-1);
-    }
+  .scrollButton:hover {
+    background-color: #ffffff;
+  }
+  .scrollButton i:hover {
+    color: var(--eerie-black-1);
+  }
 }
 
-
-
 .show {
-    display: block;
+  display: block;
 }
 
 .hide {
-    display: none;
+  display: none;
 }

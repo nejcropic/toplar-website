@@ -1,149 +1,157 @@
 {
-    "topbar": {
-        "opentime": "Odprto vsak dan"
+  "topbar": {
+    "opentime": "Odprto vsak dan"
+  },
+  "navbar": {
+    "pizzerija-naslov": "Pizzerija",
+    "home": "Domov",
+    "reservation": "Rezervacije",
+    "menu": "Meni",
+    "toplar": "Pizzerija Toplar",
+    "about": "O nas",
+    "gallery": "Galerija",
+    "park": "Park Loka"
+  },
+  "hero": {
+    "about": "Preberi več",
+    "gallery": "Poglej več",
+    "reservation": "Rezerviraj",
+    "park": "Poglej"
+  },
+  "backgroundslider": {
+    "sliderp": "Dobrodošli v Piceriji Toplar ",
+    "sliderh": "",
+    "menu": "Cenik"
+  },
+  "home": {
+    "events": {
+      "title": "Zabave za zaključene družbe",
+      "subtitle": "Rezervacija",
+      "description": "V Piceriji Toplar lahko rezervirate mizo ali pa si zagotovite celoten kozolec za zabavo ali zaključeno družbo. Hrano vam pripravljamo do 15h dalje, po dogovoru pa se tudi prilagodimo.\n Rezervacije sprejemamo na telefonsko številko 01-7886-833 ali 041-655-227.",
+      "button": "Poglej meni"
     },
-    "navbar": {
-        "pizzerija-naslov": "Pizzerija",
-        "home": "Domov",
-        "reservation": "Rezervacije",
-        "menu": "Meni",
-        "toplar": "Pizzerija Toplar",
-        "about": "O nas",
-        "gallery": "Galerija",
-        "park": "Park Loka"
+    "park": {
+      "title": "Park Loka",
+      "subtitle": "Najem",
+      "description": "Ob mrzlem pivu odigrajte partijo biljarda s prijatelji. Biljard miza je namenjena samo odraslim, za mlajše je zraven manjša otroška miza.",
+      "button": "Možnosti najema"
     },
-    "hero": {
-        "about": "Preberi več",
-        "gallery": "Poglej več",
-        "reservation": "Rezerviraj",
-        "park": "Poglej"
-    },
-    "backgroundslider": {
-        "sliderp":"Dobrodošli v Piceriji Toplar ",
-        "sliderh": "",
-        "menu": "Cenik"
-    },
-    "home": {
-        "events": {
-            "title": "Zabave za zaključene družbe",
-            "subtitle": "Rezervacija",
-            "description": "V Piceriji Toplar lahko rezervirate mizo ali pa si zagotovite celoten kozolec za zabavo ali zaključeno družbo. Hrano vam pripravljamo do 15h dalje, po dogovoru pa se tudi prilagodimo.\n Rezervacije sprejemamo na telefonsko številko 01-7886-833 ali 041-655-227.",
-            "button": "Poglej meni"
-        },
-        "park": {
-            "title": "Park Loka",
-            "subtitle": "Najem",
-            "description": "Ob slapovih reke Krke, v bližini nekdanje rimske ceste, leži slikovita suhokranjska vas Zagradec, ki je zrasla na dediščini starega železarskega naselja Fužina. Na tem območju še danes stojita hidroelektrarna in edini valjčni mlin v zgprnejnm toku reke Krke. Prelepi pogledi na reko Krko tu omogočajo razvoj svojevrstnega butičnega turizma, o čemer se lahko prepričate tudi v našem Parku Loka.",
-            "button": "Možnosti najema"
-        }
-    
-    },
-    "meni": {
-        "buttons": {
-            "pizze": "Pizze",
-            "burgers": "burgerji",
-            "drinks": "druga ponudba",
-            "extras": "dodatki"
-        },
-        "pizze": {
-            "size1": "Mala",
-            "size2": "Velika",
-            "titles": {
-                "picici": "Pičiči",
-                "tanavadna": "Tanavadna",
-                "neza": "Neža",
-                "kmecka": "Kmečka",
-                "tunca": "Tunca",
-                "hudicek": "Hudiček",
-                "stirjesiri": "Štirje siri",
-                "poletna": "Poletna",
-                "napalavica": "Pica na palavica",
-                "margerita": "Margerita",
-                "toplar": "Toplar",
-                "cesencek": "Česenček",
-                "murje": "Murje",
-                "kraska": "Kraška",
-                "mehiska": "Mehiška",
-                "vegi": "Vegi",
-                "jurcek": "Jurček"
-            },
-            "alergeni": {
-                "picici": "",
-                "tanavadna": "Pelati, šunka, gobe, sir",
-                "neza": "Pelati, šunka, gobe, hrenovke, sir",
-                "kmecka": "Pelati, prekajena šunka, gobe, suha salama, sir, hren",
-                "tunca": "Pelati, sir, tuna, koruza, tržaška omaka",
-                "hudicek": "Pelati, šunka, gobe, pikantna salama, sir, feferoni",
-                "stirjesiri": "Pelati, gobe, sir, gorgonzola, mocarela, parmezan",
-                "poletna": "Pelati, šunka, gobe, sir, paradižnik, paprika, koruza, slanina",
-                "napalavica": "Pizza iz dveh izbranih pizz",
-                "margerita": "Pelati, gobe, sir",
-                "toplar": "Pelati, šunka, gobe, suha salama, sir, artičoke",
-                "cesencek": "Pelati, šunka, gobe, suha salama, sir, tržaška omaka",
-                "murje": "Pelati, sir, mešani morski sadeži, tržaška omaka",
-                "kraska": "Pelati, gobe, sir, pršut, olive",
-                "mehiska": "Pelati, šunka, gobe, pikantna salama, sir, koruza, nacho sir",
-                "vegi": "Pelati, gobe, sir, paradižnik, paprika, koruza, slanina, artičoke, olive",
-                "jurcek": "Pelati, šunka, sir, jurčki, tržaška omaka, kisla smetana"
-            }
-        },
-        "burgers": {
-            "titles": {
-                "hamburger": "Hamburger",
-                "hamburgerham": "Hamburger s popečeno slanino",
-                "cheeseburger": "Cheeseburger",
-                "cheeseburgerham": "Cheeseburger s popečeno slanino",
-                "vegi": "Vegi burger",
-                "vegicheese": "Vegi burger s sirom"
-            },
-            "sestavine": {
-                "hamburger": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, majoneza, ajvar, gorčica, kečap, nacho sir",
-                "hamburgerham": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, popečena slanina, majoneza, ajvar, gorčica, kečap, nacho sir",
-                "cheeseburger": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, majoneza, ajvar, gorčica, kečap, nacho sir",
-                "cheeseburgerham": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, popečena slanina, majoneza, ajvar, gorčica, kečap, nacho sir",
-                "vegi": "Štručka s sezamom, zelenjavni polpet, čebula, paradižnik, paprika, solata, majoneza, ajvar, gorčica, kečap, nacho sir",
-                "vegicheese": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, majoneza, ajvar, gorčica, kečap, nacho sir"
-            }
-        }
-    },
-    "about": {
-        "text1": "Leta 1991 smo v objektu, ki je v preteklosti služil kot hlev, odprli bife. Kasneje smo našo ponudbo razširili še s picami in hamburgerji. Svoje prostore smo od takrat nadgradili z veliko teraso in vrtom, picerijo pa leta 2019 še razširili ter jo v celoti obnovili. Notranjost in zunanjost picerije tako odražata našo ljubezen do starin, ki prostorom daje pridih domačnosti, sočasno pa prispevajo k ohranjanju kulturne dediščine širše dolenjske regije. Poseben pečat naši piceriji daje kozolec ob osrednjem objektu, katerega smo prilagodili za zabave in zaključene družbe",
-        "text2": "Kozolec, narečno tudi 'kazuc', je s svojo leseno in odprto konstrukcijo, nezgrešljiv del slovenske podeželske krajine. Na Dolenjskem prevladuje tako imenovani dvojni kozolec oziroma toplar. Primarno je bil kozolec namenjen sušenju in shranjevanju pridelkov, dane spa predvsem hranjenju kmetijskih strojev in orodja. V preteklosti so imeli kozolci tudi družaben namen, ki ga v Piceriji Toplar ohranjamo še danes. Toplarjev kozolec je bil predelan za zabave in zaključene družbe, pri čemer je bil uporabljen le star material iz poda in kašče ",
-        "text3": "Zagraška dolin'ca \n prelepa si ti.\n 'Maš sončne rebrice\n in majhne vasi.\n\n Krka zelena\n potiho šumi.\n Po strugi globoki\n v daljavo hiti.\n\n Tam cerkvica bela\n ob krki stoji.\n Prijazno zagraško\n dolinco krasi.\n\n Lojze Zupančič",
-        "text4": "Le lučaj stran od vasi Zagradec se ob reki Krki nahaja naš Park Loka. Slednji v vročih poletnih dneh ponuja možnosti osvežitve v prijetno hladni reki na njenih slapovih in v senci raznovrstnih dreves, ki obkrožajo park. Park smo obogatili s številnimi zasajenimi cvetlicami in grmovnicami, na pobočju nad reko pa s portali in skalnjaki pričarali vtis krajinske raznovrstnosti. "
-    },
-    "gallery": {
-        "text1": "Notranji prostori",
-        "text2": "Park Loka",
-        "text3": "Hrana in pijača"},
-    "loka": {
-        "title": "Oglej si park",
-        "subtitle": "Za uporabo in najem prostorov pokličite na telefonsko številko 01-7886-833 ali 041-655-227",
-        "text": "Možen najem.",
-        "gallery": "Galerija",
-        "kasca": {
-            "title": "Kašča",
-            "text": "Na vhodu v Park Loka se nahaja bar Kašča, ki v poletnih mesecih ponuja možnost osvežitve po prilagojenem delovnem času."
-        },
-        "kozolec": {
-            "title": "Kozolec",
-            "text": "Pod barom Kašča se nahaja amfiteater s kozolcem, ki je namenjen večjim zabavam in prireditvam, z možnostjo najema."
-        },
-        "loka": {
-            "title": "Loka",
-            "text": "V spodnjem delu Parka Loka ob reki Krki se nahaja razgiban prostor za zabave, piknike, kampiranje in športne dejavnosti. \n Po dogovoru lahko najamete celoten prostor z leseno hišico za večjo družbo ali posamezen kotiček ob reki, s kuriščem za piknik za manjše skupine in kampiranje.\n Spodnji del parka ponuja možnost rekreacije, primeren pa je tudi za zaključek veslaškega izleta po Krki." 
-        }
-    },
-    "footer": {
-        "title": "Pizzerija",
-        "address": "Slovenija",
-        "map": "Zemljevid",
-        "howto": "Kako do nas", 
-        "social": "Spremljajte nas na:",
-        "workingtime": "Odpiralni čas",
-        "time1": "Pon - Čet",
-        "time2": "Pet - Sob",
-        "time3": "Ned",
-        "contact": "Kontakt"
+    "biljard": {
+      "title": "Biljard",
+      "subtitle": "Partija biljarda",
+      "description": "V Piceriji Toplar lahko zaigraš tudi biljard. Na voljo imamo dva biljardna miza, ki sta primerna tako za začetnike kot tudi za bolj izkušene igralce.",
+      "button": "Ogled galerije"
     }
+  },
+  "meni": {
+    "buttons": {
+      "pizze": "Pizze",
+      "burgers": "burgerji",
+      "drinks": "druga ponudba",
+      "extras": "dodatki"
+    },
+    "pizze": {
+      "size1": "Mala",
+      "size2": "Velika",
+      "titles": {
+        "picici": "Pičiči z omakami",
+        "picici_slanina": "Pičiči s slanino in omakami",
+        "tanavadna": "Tanavadna",
+        "neza": "Neža",
+        "kmecka": "Kmečka",
+        "tunca": "Tunca",
+        "hudicek": "Hudiček",
+        "stirjesiri": "Štirje siri",
+        "poletna": "Poletna",
+        "napalavica": "Pica na palavica",
+        "margerita": "Margerita",
+        "toplar": "Toplar",
+        "cesencek": "Česenček",
+        "murje": "Murje",
+        "kraska": "Kraška",
+        "mehiska": "Mehiška",
+        "vegi": "Vegi",
+        "jurcek": "Jurček"
+      },
+      "alergeni": {
+        "picici": "Sir",
+        "picici_slanina": "Sir, slanina",
+        "tanavadna": "Pelati, šunka, gobe, sir",
+        "neza": "Pelati, šunka, gobe, hrenovke, sir",
+        "kmecka": "Pelati, prekajena šunka, gobe, suha salama, sir, hren",
+        "tunca": "Pelati, sir, tuna, koruza, tržaška omaka",
+        "hudicek": "Pelati, šunka, gobe, pikantna salama, sir, feferoni",
+        "stirjesiri": "Pelati, gobe, sir, gorgonzola, mocarela, parmezan",
+        "poletna": "Pelati, šunka, gobe, sir, paradižnik, paprika, koruza, slanina",
+        "napalavica": "Pizza iz dveh izbranih pizz",
+        "margerita": "Pelati, gobe, sir",
+        "toplar": "Pelati, šunka, gobe, suha salama, sir, artičoke",
+        "cesencek": "Pelati, šunka, gobe, suha salama, sir, tržaška omaka",
+        "murje": "Pelati, sir, mešani morski sadeži, tržaška omaka",
+        "kraska": "Pelati, gobe, sir, pršut, olive",
+        "mehiska": "Pelati, šunka, gobe, pikantna salama, sir, koruza, nacho sir",
+        "vegi": "Pelati, gobe, sir, paradižnik, paprika, koruza, slanina, artičoke, olive",
+        "jurcek": "Pelati, šunka, sir, jurčki, tržaška omaka, kisla smetana"
+      }
+    },
+    "burgers": {
+      "titles": {
+        "hamburger": "Hamburger",
+        "hamburgerham": "Hamburger s popečeno slanino",
+        "cheeseburger": "Cheeseburger",
+        "cheeseburgerham": "Cheeseburger s popečeno slanino",
+        "vegi": "Vegi burger",
+        "vegicheese": "Vegi burger s sirom"
+      },
+      "sestavine": {
+        "hamburger": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, majoneza, ajvar, gorčica, kečap, nacho sir",
+        "hamburgerham": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, popečena slanina, majoneza, ajvar, gorčica, kečap, nacho sir",
+        "cheeseburger": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, majoneza, ajvar, gorčica, kečap, nacho sir",
+        "cheeseburgerham": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, popečena slanina, majoneza, ajvar, gorčica, kečap, nacho sir",
+        "vegi": "Štručka s sezamom, zelenjavni polpet, čebula, paradižnik, paprika, solata, majoneza, ajvar, gorčica, kečap, nacho sir",
+        "vegicheese": "Štručka s sezamom, pleskavica, čebula, paradižnik, paprika, solata, sir, majoneza, ajvar, gorčica, kečap, nacho sir"
+      }
+    }
+  },
+  "about": {
+    "text1": "Leta 1991 smo v objektu, ki je v preteklosti služil kot hlev, odprli bife. Kasneje smo našo ponudbo razširili še s picami in hamburgerji. Svoje prostore smo od takrat nadgradili z veliko teraso in vrtom, picerijo pa leta 2019 še razširili ter jo v celoti obnovili. Notranjost in zunanjost picerije tako odražata našo ljubezen do starin, ki prostorom daje pridih domačnosti, sočasno pa prispevajo k ohranjanju kulturne dediščine širše dolenjske regije. Poseben pečat naši piceriji daje kozolec ob osrednjem objektu, katerega smo prilagodili za zabave in zaključene družbe",
+    "text2": "Kozolec, narečno tudi 'kazuc', je s svojo leseno in odprto konstrukcijo, nezgrešljiv del slovenske podeželske krajine. Na Dolenjskem prevladuje tako imenovani dvojni kozolec oziroma toplar. Primarno je bil kozolec namenjen sušenju in shranjevanju pridelkov, dane spa predvsem hranjenju kmetijskih strojev in orodja. V preteklosti so imeli kozolci tudi družaben namen, ki ga v Piceriji Toplar ohranjamo še danes. Toplarjev kozolec je bil predelan za zabave in zaključene družbe, pri čemer je bil uporabljen le star material iz poda in kašče ",
+    "text3": "Zagraška dolin'ca \n prelepa si ti.\n 'Maš sončne rebrice\n in majhne vasi.\n\n Krka zelena\n potiho šumi.\n Po strugi globoki\n v daljavo hiti.\n\n Tam cerkvica bela\n ob krki stoji.\n Prijazno zagraško\n dolinco krasi.\n\n Lojze Zupančič",
+    "text4": "Le lučaj stran od vasi Zagradec se ob reki Krki nahaja naš Park Loka. Slednji v vročih poletnih dneh ponuja možnosti osvežitve v prijetno hladni reki na njenih slapovih in v senci raznovrstnih dreves, ki obkrožajo park. Park smo obogatili s številnimi zasajenimi cvetlicami in grmovnicami, na pobočju nad reko pa s portali in skalnjaki pričarali vtis krajinske raznovrstnosti. "
+  },
+  "gallery": {
+    "text1": "Notranji prostori",
+    "text2": "Park Loka",
+    "text3": "Hrana in pijača"
+  },
+  "loka": {
+    "title": "Oglej si park",
+    "subtitle": "Za uporabo in najem prostorov pokličite na telefonsko številko 01-7886-833 ali 041-655-227",
+    "text": "Možen najem.",
+    "gallery": "Galerija",
+    "kasca": {
+      "title": "Kašča",
+      "text": "Na vhodu v Park Loka se nahaja bar Kašča, ki v poletnih mesecih ponuja možnost osvežitve po prilagojenem delovnem času."
+    },
+    "kozolec": {
+      "title": "Kozolec",
+      "text": "Pod barom Kašča se nahaja amfiteater s kozolcem, ki je namenjen večjim zabavam in prireditvam, z možnostjo najema."
+    },
+    "loka": {
+      "title": "Loka",
+      "text": "V spodnjem delu Parka Loka ob reki Krki se nahaja razgiban prostor za zabave, piknike, kampiranje in športne dejavnosti. \n Po dogovoru lahko najamete celoten prostor z leseno hišico za večjo družbo ali posamezen kotiček ob reki, s kuriščem za piknik za manjše skupine in kampiranje.\n Spodnji del parka ponuja možnost rekreacije, primeren pa je tudi za zaključek veslaškega izleta po Krki."
+    }
+  },
+  "footer": {
+    "title": "Pizzerija",
+    "address": "Slovenija",
+    "map": "Zemljevid",
+    "howto": "Kako do nas",
+    "social": "Spremljajte nas na:",
+    "workingtime": "Odpiralni čas",
+    "time1": "Pon - Čet",
+    "time2": "Pet - Sob",
+    "time3": "Ned",
+    "contact": "Kontakt"
+  }
 }

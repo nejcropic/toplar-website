@@ -12,7 +12,25 @@ const filterImagesByFirstLetter = (images, letter) => {
   });
 };
 
-export const GalerijaItemsT = filterImagesByFirstLetter(allImages, "t").map(
+export const GalerijaItemsProstori = filterImagesByFirstLetter(
+  allImages,
+  "t"
+).map((image, index) => ({
+  title: `Toplar${index + 1}`,
+  image,
+  besedilo: "Toplar",
+}));
+
+export const GalerijaItemsZabave = filterImagesByFirstLetter(
+  allImages,
+  "z"
+).map((image, index) => ({
+  title: `Toplar${index + 1}`,
+  image,
+  besedilo: "Toplar",
+}));
+
+export const GalerijaItemsLoka = filterImagesByFirstLetter(allImages, "p").map(
   (image, index) => ({
     title: `Toplar${index + 1}`,
     image,
@@ -20,7 +38,7 @@ export const GalerijaItemsT = filterImagesByFirstLetter(allImages, "t").map(
   })
 );
 
-export const GalerijaItemsP = filterImagesByFirstLetter(allImages, "p").map(
+export const GalerijaItemsHrana = filterImagesByFirstLetter(allImages, "h").map(
   (image, index) => ({
     title: `Toplar${index + 1}`,
     image,
@@ -28,10 +46,20 @@ export const GalerijaItemsP = filterImagesByFirstLetter(allImages, "p").map(
   })
 );
 
-export const GalerijaItemsH = filterImagesByFirstLetter(allImages, "h").map(
-  (image, index) => ({
-    title: `Toplar${index + 1}`,
-    image,
-    besedilo: "Toplar",
-  })
-);
+export const GalerijaItemsBiljard = filterImagesByFirstLetter(
+  allImages,
+  "b"
+).map((image, index) => ({
+  title: `Toplar${index + 1}`,
+  image,
+  besedilo: "Toplar",
+}));
+
+export const GalerijaItemsOdbojka = filterImagesByFirstLetter(
+  allImages,
+  "o"
+).map((image, index) => ({
+  title: `Toplar${index + 1}`,
+  image,
+  besedilo: "Toplar",
+}));

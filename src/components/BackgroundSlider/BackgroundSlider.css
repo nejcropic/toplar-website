@@ -24,21 +24,21 @@
   z-index: 10; /* Ensure it's above the images */
 }
 
-.menuBtnSlider button{
+.menuBtnSlider button {
   width: 100%;
   height: 3rem;
   border: 1px solid var(--mainColor);
   border-radius: 4px;
   background-color: var(--transparentBlackColor);
-  color:var(--mainColor);
+  color: var(--mainColor);
   font-family: var(--fontFamily-forum);
   font-size: 1rem;
   cursor: pointer;
 }
 
-.menuBtnSlider button:hover{
+.menuBtnSlider button:hover {
   background-color: var(--mainColor);
-  color:var(--transparentBlackColor);
+  color: var(--transparentBlackColor);
 }
 
 .slider-controls button {
@@ -51,8 +51,12 @@
   border: none;
   cursor: pointer;
   padding: 10px;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #00000080;
+  border-radius: 0.5rem;
 }
 
 .slider-controls button:first-of-type {
@@ -92,21 +96,42 @@
   transform: translateX(-50%);
   z-index: 3;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Added this */
+  justify-content: center; /* Added this */
+  text-align: center; /* Ensures text is centered if it wraps */
 }
-.slider-text-container p{
-  width: 70%;
-  font-size: 3rem;/* 
-  border: 1px solid var(--mainColor);
-  border-radius: 4px; 
-  background-color: var(--transparentBlackColor);
-  padding: 0.5rem;*/
-  color:var(--mainColor);
+.slider-text-container p {
+  width: auto;
+  font-size: 3rem;
+  margin: 0;
+  color: var(--mainColor);
   font-family: var(--fontFamily-forum);
   text-shadow: 1px 1px #000;
   padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.slider-text-container img {
+  width: 10%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
 }
 @media screen and (max-width: 1000px) {
-  .slider-text-container p{
+  .slider-text-container {
+    flex-direction: column;
+  }
+  .slider-text-container p {
     font-size: 2.2rem;
-  }  
+    width: 70%;
+  }
+  .slider-text-container img {
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 6rem;
+  }
 }

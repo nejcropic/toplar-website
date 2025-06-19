@@ -7,6 +7,10 @@ import { motion } from "framer-motion";
 
 const SliderLoka = ({ sliderData }) => {
   const [index, setIndex] = useState(0);
+  const [aspectRatio, setAspectRatio] = useState(1);
+  const [dotPage, setDotPage] = useState(0);
+
+  const dotsPerPage = 4;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,6 +18,14 @@ const SliderLoka = ({ sliderData }) => {
     }, 5000); // Change image every 5 seconds
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = sliderData[index].image;
+    img.onload = () => {
+      setAspectRatio(img.width / img.height);
+    };
+  }, [index, sliderData]);
 
   const goToSlide = (slideIndex) => {
     setIndex(slideIndex);
@@ -30,8 +42,17 @@ const SliderLoka = ({ sliderData }) => {
     );
   };
 
+  const goToDotPage = (page) => {
+    setDotPage(page);
+  };
+
+  const totalPages = Math.ceil(sliderData.length / dotsPerPage);
+
   return (
-    <div className="loka-slider-show">
+    <div
+      className="loka-slider-show"
+      style={{ height: `${50 / aspectRatio}vw` }}
+    >
       {sliderData.map((slide, i) => (
         <motion.img
           key={i}
@@ -49,24 +70,34 @@ const SliderLoka = ({ sliderData }) => {
         <button onClick={goToNext}>&gt;</button>
       </div> */}
       <div className="loka-slider-dots">
-        {sliderData.map((_, i) => (
+        {dotPage > 0 && (
           <span
-            key={i}
-            className={`loka-dot ${i === index ? "active" : ""}`}
-            onClick={() => goToSlide(i)}
-          ></span>
-        ))}
+            className="loka-dot-control"
+            onClick={() => goToDotPage(dotPage - 1)}
+          >
+            &lt;
+          </span>
+        )}
+        {sliderData
+          .slice(dotPage * dotsPerPage, (dotPage + 1) * dotsPerPage)
+          .map((_, i) => (
+            <span
+              key={i + dotPage * dotsPerPage}
+              className={`loka-dot ${
+                i + dotPage * dotsPerPage === index ? "active" : ""
+              }`}
+              onClick={() => goToSlide(i + dotPage * dotsPerPage)}
+            ></span>
+          ))}
+        {dotPage < totalPages - 1 && (
+          <span
+            className="loka-slider-controls"
+            onClick={() => goToDotPage(dotPage + 1)}
+          >
+            &gt;
+          </span>
+        )}
       </div>
-      {/* 
-      <div className="slider-text-container">
-        <p>Dobrodošli na Dolenjskem!</p>
-        <h2>En kratek stavek..</h2>
-      </div>
-      <div className="menuBtnSlider">
-        <Link to="/meni">
-          <button>CENIK</button>
-        </Link>
-      </div> */}
     </div>
   );
 };

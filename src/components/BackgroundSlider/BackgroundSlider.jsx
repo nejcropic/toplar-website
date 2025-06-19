@@ -4,6 +4,7 @@ import "./BackgroundSlider.css";
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
+import { Srce } from "../..";
 
 /* import { sliderData, sliderDataPhone } from "./BackgroundSliderData"; */
 
@@ -54,7 +55,7 @@ const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
         <button onClick={goToPrevious}>&lt;</button>
         <button onClick={goToNext}>&gt;</button>
       </div>
-      <div className="slider-dots">
+      {/* <div className="slider-dots">
         {getData().map((_, i) => (
           <span
             key={i}
@@ -62,12 +63,10 @@ const BackgroundSlider = ({ sliderData, sliderDataPhone }) => {
             onClick={() => goToSlide(i)}
           ></span>
         ))}
-      </div>
+      </div> */}
       <div className="slider-text-container">
-        <p>
-          {t("backgroundslider.sliderp")}
-          <i className="fas fa-heart"></i>
-        </p>
+        <p>{t("backgroundslider.sliderp")}</p>
+        <img src={Srce} alt="" className="heart-image" />
       </div>
       <div className="menuBtnSlider">
         <Link to="/meni">

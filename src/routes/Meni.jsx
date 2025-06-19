@@ -15,8 +15,20 @@ import {
   Burgerji,
   Dodatki,
   DrugaPonudba,
+  Alergeni,
 } from "../components/Meni/MeniItems.jsx";
-import { Toplar6, Hrana1, Hrana2, Hrana3, Hrana5, Toplar5 } from "../index";
+import {
+  Toplar6,
+  Hrana1,
+  Hrana2,
+  Hrana3,
+  ToplarVideo,
+  Hrana6,
+  Toplar5,
+  Srce,
+  Hrana7,
+  Hrana8,
+} from "../index";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton.jsx";
 
 function Meni() {
@@ -99,7 +111,7 @@ function Meni() {
                 {t("meni.buttons.drinks")}
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 className={
                   showTab === 4 ? "buttons-choose active" : "buttons-choose"
@@ -109,7 +121,7 @@ function Meni() {
                 <i class="fa-solid fa-cubes-stacked"></i>
                 {t("meni.buttons.extras")}
               </button>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </motion.div>
@@ -121,16 +133,23 @@ function Meni() {
           animate="show"
           className={showTab === 1 ? "meni-item show" : "meni-item"}
         >
-          <div className="image-meni">
-            <img src={Hrana5} alt="" className="image-meni-sub" />
-          </div>
-
           <div className="meni-flex">
             <h1>{t("meni.buttons.pizze")}</h1>
+            <div className="meni-velikosti-left">
+              <div className="lines">
+                <hr className="line-left" />
+                <hr className="line-right" />
+              </div>
+              <img src={Srce} alt="" className="heart-image-meni" />
+              <div className="lines">
+                <hr className="line-right" />
+                <hr className="line-left" />
+              </div>
+            </div>
             <div className="meni-divide">
               <div className="meni-pizza">
                 <div className="meni-velikosti-left">
-                  <hr />
+                  <hr className="pizza-lines" />
                 </div>
                 <div className="meni-velikosti">
                   <h2>{t("meni.pizze.size1")}</h2>
@@ -139,7 +158,7 @@ function Meni() {
               </div>
               <div className="meni-pizza show-pizza">
                 <div className="meni-velikosti-left">
-                  <hr />
+                  <hr className="pizza-lines" />
                 </div>
                 <div className="meni-velikosti">
                   <h2>{t("meni.pizze.size1")}</h2>
@@ -172,6 +191,20 @@ function Meni() {
               })}
             </div>
           </div>
+
+          <div className="image-meni">
+            <video
+              autoPlay
+              loop
+              muted
+              src={ToplarVideo}
+              alt=""
+              className="image-meni-sub"
+            />
+          </div>
+          <div className="image-meni">
+            <img src={Hrana8} alt="" className="image-meni-sub" />
+          </div>
         </motion.div>
 
         <hr
@@ -182,11 +215,19 @@ function Meni() {
           ref={elementRef}
           className={showTab === 2 ? "meni-item show" : "meni-item"}
         >
-          <div className="image-meni">
-            <img src={Hrana1} alt="" className="image-meni-sub" />
-          </div>
           <div className="meni-flex">
             <h1>Burgerji</h1>
+            <div className="meni-velikosti-left">
+              <div className="lines">
+                <hr className="line-left" />
+                <hr className="line-right" />
+              </div>
+              <img src={Srce} alt="" className="heart-image-meni" />
+              <div className="lines">
+                <hr className="line-right" />
+                <hr className="line-left" />
+              </div>
+            </div>
             <div className="meni-divide">
               {Burgerji.map((item, index) => {
                 return (
@@ -210,6 +251,10 @@ function Meni() {
               })}
             </div>
           </div>
+
+          <div className="image-meni">
+            <img src={Hrana1} alt="" className="image-meni-sub" />
+          </div>
         </div>
 
         <hr
@@ -217,191 +262,82 @@ function Meni() {
         />
 
         <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Hrana2} alt="" className="image-meni-sub" />
-          </div>
           <div className="meni-flex">
             <h1>Druga ponudba</h1>
+            <div className="meni-velikosti-left">
+              <div className="lines">
+                <hr className="line-left" />
+                <hr className="line-right" />
+              </div>
+              <img src={Srce} alt="" className="heart-image-meni" />
+              <div className="lines">
+                <hr className="line-right" />
+                <hr className="line-left" />
+              </div>
+            </div>
             <div className="meni-divide">
               {DrugaPonudba.map((item, index) => {
+                return (
+                  <div className="meni-content" key={index}>
+                    <div className="meni-content-burger">
+                      <div className="meni-title">
+                        <h3>{t(item.title)}</h3>
+                        {/* 
+                        <h4>{item.alergeni}</h4> */}
+                      </div>
+                      <div className="meni-line">
+                        <hr />
+                      </div>
+                      <div className="meni-cena">
+                        <h3>{item.cena}€</h3>
+                      </div>
+                    </div>
+                    <p>{t(item.sestavine)}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <hr
+              className={
+                showTab === 3 ? "meni-breakline show" : "meni-breakline"
+              }
+            />
+            <h1>Dodatki</h1>
+            <div className="meni-velikosti-left">
+              <hr />
+              <img src={Srce} alt="" className="heart-image-meni" />
+              <hr />
+            </div>
+            <div className="meni-divide">
+              {Dodatki.map((item, index) => {
                 return (
                   <div className="meni-content-up" key={index}>
                     <div className="meni-title">
                       <h3>
-                        {item.title}
-                        {/*  {item.alergeni} */}
+                        {item.title} {item.alergeni}
                       </h3>
                     </div>
                     <div className="meni-line">
                       <hr />
                     </div>
                     <div className="meni-cena">
+                      <h4>{item.kolicina}</h4>
                       <h3>{item.cena}€</h3>
                     </div>
                   </div>
                 );
               })}
             </div>
+          </div>
+          <div className="image-meni">
+            <img src={Hrana6} alt="" className="image-meni-sub" />
           </div>
         </div>
 
         <hr
           className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
         />
-        {/* <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Toplar_alkoholne} alt="" className="image-meni-sub" />
-          </div>
-          <div className="meni-flex">
-            <h1>Pivo</h1>
-            <div className="meni-divide">
-              {Pivo.map((item, index) => {
-                return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-title">
-                      <h3>
-                        {item.title} {/* {item.alergeni} 
-                      </h3>
-                    </div>
-                    <div className="meni-line">
-                      <hr />
-                    </div>
-                    <div className="meni-cena">
-                      <h4>{item.kolicina}</h4>
-                      <h3>{item.cena}€</h3>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-        <hr
-          className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        />
-        <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
-          </div>
-          <div className="meni-flex">
-            <h1>Vino</h1>
-            <div className="meni-divide">
-              {Vino.map((item, index) => {
-                return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-title">
-                      <h3>{item.title}</h3>
-                      {/* 
-                      <h4>{item.alergeni}</h4> 
-                    </div>
-                    <div className="meni-line">
-                      <hr />
-                    </div>
-                    <div className="meni-cena">
-                      <h4>{item.kolicina}</h4>
-                      <h3>{item.cena}€</h3>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-        <hr
-          className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        />
-        <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
-          </div>
-          <div className="meni-flex">
-            <h1>Žgane pijače in likerji</h1>
-            <div className="meni-divide">
-              {Zgane.map((item, index) => {
-                return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-title">
-                      <h3>{item.title}</h3>
-                      {/* 
-                      <h4>{item.alergeni}</h4> 
-                    </div>
-                    <div className="meni-line">
-                      <hr />
-                    </div>
-                    <div className="meni-cena">
-                      <h4>{item.kolicina}</h4>
-                      <h3>{item.cena}€</h3>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-        <hr
-          className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        />
-        <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Toplar_galerija7} alt="" className="image-meni-sub" />
-          </div>
-          <div className="meni-flex">
-            <h1>Viskiji</h1>
-            <div className="meni-divide">
-              {Viskiji.map((item, index) => {
-                return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-title">
-                      <h3>{item.title}</h3>
-                      {/* 
-                      <h4>{item.alergeni}</h4> 
-                    </div>
-                    <div className="meni-line">
-                      <hr />
-                    </div>
-                    <div className="meni-cena">
-                      <h4>{item.kolicina}</h4>
-                      <h3>{item.cena}€</h3>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-        <hr
-          className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        />
-        <div className={showTab === 3 ? "meni-item show" : "meni-item"}>
-          <div className="image-meni">
-            <img src={Toplar_alkoholne} alt="" className="image-meni-sub" />
-          </div>
-          <div className="meni-flex">
-            <h1>Topli napitki</h1>
-            <div className="meni-divide">
-              {TopliNapitki.map((item, index) => {
-                return (
-                  <div className="meni-content-up" key={index}>
-                    <div className="meni-title">
-                      <h3>
-                        {item.title} {/* {item.alergeni} 
-                      </h3>
-                    </div>
-                    <div className="meni-line">
-                      <hr />
-                    </div>
-                    <div className="meni-cena">
-                      <h3>{item.cena}€</h3>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-        <hr
-          className={showTab === 3 ? "meni-breakline show" : "meni-breakline"}
-        /> 
+
         {/* alergeni */}
         <div className={showTab === 4 ? "meni-item show" : "meni-item"}>
           <div className="image-meni">
@@ -434,28 +370,30 @@ function Meni() {
           className={showTab === 4 ? "meni-breakline show" : "meni-breakline"}
         />
       </div>
-      {/* <div className="alergeni-wrapper">
-        <div className="alergeni-container">
-          <h3>Alergeni</h3>
-          {Alergeni.map((item, index) => {
-            return (
-              <div className="meni-content alergeni" key={index}>
-                <div className="alergeni-line">
-                  <hr />
-                </div>
-                <div className="meni-title alergeni-title">
-                  <h4>
-                    {item.številka}. {item.title}
-                  </h4>
-                </div>
-                <div className="alergeni-line">
-                  <hr />
-                </div>
-              </div>
-            );
-          })}
+      <div className="meni-wrapper alergeni-wrapper alergeni">
+        <h3>Alergeni</h3>
+        <div className="meni-item show">
+          <div className="meni-flex">
+            <div className="meni-divide">
+              {Alergeni.map((item, index) => {
+                return (
+                  <div
+                    className="meni-content alergeni alergeni-content"
+                    key={index}
+                  >
+                    <div className="meni-title">
+                      <h4>
+                        {item.številka}. {item.title}
+                      </h4>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
-      </div> */}
+        <hr className="meni-breakline show" />
+      </div>
 
       <Footer />
     </>

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nejcropic.github.io/toplar-website",
+  "homepage": "https://picerija-toplar.si",
   "name": "toplar_website_git",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "flag-icons": "^7.2.1",
     "framer-motion": "^11.0.5",
     "i18next": "^23.11.2",
+    "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.1",

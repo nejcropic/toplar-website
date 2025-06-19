@@ -1,130 +1,215 @@
 .background-container {
-    height: 100vh;
+  height: 100vh;
 }
-.home-wrapper{
-    margin-top: 2rem;
-    width: 100%;
-    background-color: var(--eerie-black-1);
-    color: var(--mainColor);
+.home-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: var(--eerie-black-1);
+  color: var(--mainColor);
 }
 
 .home-container {
-    width: 90vw;/* 
-    min-height: 100vh; */
-    height: auto;
-    border-radius: 4px;
-    padding: 2rem 0;
+  width: 90vw;
+  height: auto;
+  border-radius: 4px;
+  padding: 2rem 0;
 }
 .home-flex {
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 4rem;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4rem;
 }
-
+.home-flex-reverse {
+  height: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 4rem;
+}
 @media screen and (max-width: 1000px) {
-    .home-flex{
-        flex-direction: column;
-    }
+  .home-flex,
+  .home-flex-reverse {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 2560px) {
-    .home-container{
-        width: 60vw;
-        padding: 0 5vw;
-    }
+  .home-container {
+    width: 60vw;
+    padding: 0 5vw;
+  }
 }
-
 
 .home-image {
-    width: 50%;
-    max-height: 50vh;
-    padding: 1rem;
+  width: 50%;
+  padding: 1rem;
 }
-.home-image img{
-    width: 70%;
-    max-height: 100%;
+.home-image img {
+  width: 25rem;
+  height: 25rem;
 }
-
 
 @media screen and (max-width: 1000px) {
-    .home-image{
-        width: 100%;
-    }
-    .home-image img{
-        width: 100%;
-        max-height: 100%;
-    }
+  .home-image {
+    width: 100%;
+  }
+  .home-image img {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 @media screen and (min-width: 2560px) {
-    .home-container hr{
-        margin-top: 3rem;
-      }
+  .home-container hr {
+    margin-top: 3rem;
+  }
 }
 /* ------------------HOME-TEXT---------------------- */
 .home-text {
-    width: 50%;
+  width: 50%;
+  font-family: var(--fontFamily-forum);
 }
 
-.home-text h2, .home-text h3, .home-text pre {
-    font-size: var(--fontSizePc);
-    color: var(--white);
-    padding: 0.5rem 0;
-    font-family: inherit; /* Use the same font as the surrounding text */
-    white-space: pre-wrap; /* Wrap text to fit the container width */
-    word-wrap: break-word; /* Break long words to fit the container width */
-    background: none; /* Remove the default background */
-    border: none; /* Remove the default border */
-} 
-.home-text h2{
-    color: var(--mainColor);
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+.home-text h2,
+.home-text h3 {
+  font-size: var(--fontSizePc);
+  color: var(--white);
+  padding: 0.5rem 0;
+  font-family: inherit; /* Use the same font as the surrounding text */
 }
-.home-text pre{
-    color: var(--white);    
+
+.home-text h2 {
+  font-family: var(--fontFamily-toplar);
+  color: var(--mainColor);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
+
+.home-text span {
+  font-size: var(--fontSizePc);
+  color: var(--white);
+  padding: 0.5rem 0;
+  font-family: inherit; /* Use the same font as the surrounding text */
+  background: none; /* Remove the default background */
+  border: none; /* Remove the default border */
+}
+
 @media screen and (max-width: 1000px) {
-    .home-text {
-        width: 100%;
-    }   
-    .home-text h3{
-        font-size: var(--fontSizePhone);
-    }    
-    .home-text h2 {
-        font-size: 1.5rem;
-    }
-    .home-text pre {
-        font-size: var(--fontSizePhone);
-    }
+  .home-text {
+    width: 100%;
+  }
+  .home-text h3 {
+    font-size: 1.2rem;
+  }
+  .home-text h2 {
+    font-size: 2rem;
+  }
+  .home-text span {
+    font-size: 1.2rem;
+  }
 }
-
 /* ------------------BUTTON---------------------- */
 .menuBtn {
-    width: 50%;
-    margin-top: 1rem;
-  }
-  
-  .menuBtn button{
-    width: 100%;
-    height: 3rem;
-    border: 1px solid var(--mainColor);
-    border-radius: 4px;
-    background-color: var(--transparentBlackColor);
-    color:var(--mainColor);
-    font-family: var(--fontFamily-forum);
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .menuBtn button:hover{
-    background-color: var(--mainColor);
-    color:var(--eerie-black-1);
-  }
-  
-  .home-container hr{
-    margin-top: 1rem;
-    border: 1px dashed var(--mainColor);
-    width: 50%;
-  }
+  width: 50%;
+  margin-top: 1rem;
+}
 
+.menuBtn button {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  background-color: var(--transparentBlackColor);
+  color: var(--mainColor);
+  font-family: var(--fontFamily-forum);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menuBtn button:hover {
+  background-color: var(--mainColor);
+  color: var(--eerie-black-1);
+}
+
+/* ------------------LINES---------------------- */
+.flex-container-home {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.home-lines {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-line-right {
+  width: var(--lineRadius);
+  border: 1px solid var(--mainColor);
+  height: var(--lineRadius);
+  border-style: solid;
+  border-color: var(--mainColor);
+  border-width: 1px 0 0 0;
+  border-radius: var(--lineRadius);
+  margin: 0;
+}
+.home-line-right:before {
+  display: block;
+  content: "";
+  height: var(--lineRadius);
+  margin-top: -21px;
+  border-style: solid;
+  border-color: var(--mainColor);
+  border-width: 0 0 1px 0;
+  border-radius: var(--lineRadius);
+}
+.home-line-left {
+  width: var(--lineRadius);
+  border: 1px solid var(--mainColor);
+  height: var(--lineRadius);
+  border-style: solid;
+  border-color: var(--mainColor);
+  border-width: 0 0 1px 0;
+  border-radius: var(--lineRadius);
+  margin: 0;
+}
+.home-line-left:before {
+  display: block;
+  content: "";
+  height: var(--lineRadius);
+  margin-top: -21px;
+  border-style: solid;
+  border-color: var(--mainColor);
+  border-width: 1px 0 0 0;
+  border-radius: var(--lineRadius);
+}
+
+.home-line-wide {
+  width: 70%;
+  border: 0.5px solid var(--mainColor);
+  border-color: var(--mainColor);
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(228, 197, 144, 0),
+    rgba(228, 197, 144, 0.75),
+    rgba(228, 197, 144, 0)
+  );
+}
+.home-heart-image-meni {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0;
+  margin: 0 0.5rem;
+}
+.home-heart-image-meni img {
+  width: 100%;
+  height: 100%;
+}

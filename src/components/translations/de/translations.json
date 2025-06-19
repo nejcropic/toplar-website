@@ -19,7 +19,7 @@
     "park": "Ansehen"
   },
   "backgroundslider": {
-    "sliderp":"Willkommen in der Pizzeria Toplar",
+    "sliderp": "Willkommen in der Pizzeria Toplar",
     "sliderh": "",
     "menu": "Preisliste"
   },
@@ -35,6 +35,12 @@
       "subtitle": "Vermietung",
       "description": "Neben den Wasserfällen des Flusses Krka, in der Nähe der ehemaligen Römerstraße, liegt das malerische Dorf Zagradec, das auf dem Erbe des alten Eisenhüttendorfes Fužina gewachsen ist. In diesem Gebiet stehen noch heute ein Wasserkraftwerk und die einzige Walzmühle im oberen Flusslauf der Krka. Die schönen Ausblicke auf die Krka ermöglichen hier die Entwicklung eines besonderen Boutique-Tourismus, von dem Sie sich auch in unserem Park Loka überzeugen können.",
       "button": "Mietmöglichkeiten"
+    },
+    "biljard": {
+      "title": "Billard",
+      "subtitle": "Eine Partie Billard",
+      "description": "In der Pizzeria Toplar können Sie auch Billard spielen. Wir haben zwei Billardtische, die sowohl für Anfänger als auch für erfahrenere Spieler geeignet sind.",
+      "button": "Galerie ansehen"
     }
   },
   "meni": {
@@ -48,7 +54,8 @@
       "size1": "Klein",
       "size2": "Groß",
       "titles": {
-        "picici": "Pičiči",
+        "picici": "Pičiči mit Saucen",
+        "picici_slanina": "Pičiči mit Speck und Saucen",
         "tanavadna": "Tanavadna",
         "neza": "Neža",
         "kmecka": "Bauernpizza",
@@ -67,7 +74,8 @@
         "jurcek": "Steinpilz"
       },
       "alergeni": {
-        "picici": "",
+        "picici": "Käse",
+        "picici_slanina": "Käse, Speck",
         "tanavadna": "Tomatensauce, Schinken, Pilze, Käse",
         "neza": "Tomatensauce, Schinken, Pilze, Würstchen, Käse",
         "kmecka": "Tomatensauce, geräucherter Schinken, Pilze, Salami, Käse, Meerrettich",

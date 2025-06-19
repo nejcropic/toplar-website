@@ -63,22 +63,39 @@ function Footer() {
           <div className="line-div"></div>
           <div className="sb_footer-links">
             <h2>{t("footer.contact")}</h2>
-            <Link href="tel:017886833">
+            <Link to="tel:017886833">
               <p>
-                <i class="fa-solid fa-phone"></i> 01 788 68 33
+                <i class="fa-solid fa-phone"></i> 01-788-68-33
               </p>
             </Link>
-            <Link href="mailto:picerija.toplar@gmail.com">
+            <Link to="tel:+38641655227">
+              <p>
+                <i class="fa-solid fa-phone"></i> 041-655-227
+              </p>
+            </Link>
+            <Link to="mailto:picerija.toplar@gmail.com">
               <p>
                 <i class="fa-regular fa-envelope"></i> picerija.toplar@gmail.com
               </p>
             </Link>
           </div>
         </div>
-        <hr />
+        <hr className="footer-hr" />
         <div className="sb_footer-below">
           <div className="sb_footer-copyright">
-            <p>@{new Date().getFullYear()} Nejc Ropič. All right reserved.</p>
+            <p>
+              @2024 Toplar d.o.o. Created by
+              <a
+                href="https://nejcropic.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                {" "}
+                Nejc Ropič
+              </a>
+              . All right reserved.
+            </p>
           </div>
         </div>
       </div>

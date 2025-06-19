@@ -1,32 +1,32 @@
 .loka-slider-show {
   position: relative;
   width: 50%;
-  height: 25vw;
+  height: 40vh;
   overflow: hidden;
   align-items: center;
   margin: 0 auto;
 }
 @media screen and (max-width: 1000px) {
-  .loka-slider-show{
+  .loka-slider-show {
     height: 30vh;
-    min-height: 30vh;
+    min-height: 45vh;
     width: 100%;
-  }  
+  }
 }
 @media screen and (min-width: 1920px) {
-  .loka-slider-show{
+  .loka-slider-show {
     height: 20vw;
-  }  
+  }
 }
-.loka-slider-show img{
+.loka-slider-show img {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
-
 
 .loka-menuBtnSlider {
   position: absolute;
@@ -56,13 +56,13 @@
   color:var(--transparentBlackColor);
 }
 
-.loka-slider-controls button {
+.loka-slider-controls span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
-  color: var(--mainColor);
+  color: var(--white);
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -80,7 +80,7 @@
 
 .loka-slider-dots {
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -97,7 +97,7 @@
 }
 @media screen and (max-width: 1000px) {
   .loka-slider-dots {
-    bottom: 20px;
+    bottom: 5px;
   }
   .loka-dot {
     height: 20px;
@@ -116,28 +116,28 @@
   z-index: 3;
   width: 100%;
 }
-.loka-slider-text-container p{
+.loka-slider-text-container p {
   width: 70%;
-  font-size: 2rem;/* 
+  font-size: 2rem; /* 
   border: 1px solid var(--mainColor);
   border-radius: 4px; 
   background-color: var(--transparentBlackColor);
   padding: 0.5rem;*/
-  color:var(--mainColor);
+  color: var(--mainColor);
   font-family: var(--fontFamily-forum);
   text-shadow: 1px 1px #000;
   padding-bottom: 1rem;
 }
-.loka-slider-text-container h2{
-  color:var(--white);
+.loka-slider-text-container h2 {
+  color: var(--white);
   font-size: 2.6rem;
   text-shadow: 1px 1px #000;
 }
 @media screen and (max-width: 1000px) {
-  .loka-slider-text-container p{
+  .loka-slider-text-container p {
     font-size: 1.2rem;
-  }  
-  .loka-slider-text-container h2{
+  }
+  .loka-slider-text-container h2 {
     font-size: 1.8rem;
   }
 }

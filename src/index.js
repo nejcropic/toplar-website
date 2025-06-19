@@ -29,6 +29,11 @@ import Toplar23 from "./images/toplar23.jpg";
 import Toplar24 from "./images/toplar24.jpg";
 import Toplar25 from "./images/toplar25.jpg";
 import Toplar26 from "./images/toplar26.jpg";
+import Toplar29 from "./images/toplar29.jpg";
+import Toplar30 from "./images/toplar30.jpg";
+import Toplar31 from "./images/toplar31.jpg";
+import Toplar32 from "./images/toplar32.jpg";
+import Toplar33 from "./images/toplar33.jpg";
 import ParkLoka1 from "./images/parkLoka1.jpeg";
 import ParkLoka2 from "./images/parkLoka2.jpeg";
 import ParkLoka3 from "./images/parkLoka3.jpg";
@@ -43,11 +48,39 @@ import ParkLoka11 from "./images/parkloka11.jpeg";
 import ParkLoka12 from "./images/parkloka12.jpeg";
 import ParkLoka13 from "./images/parkloka13.jpeg";
 import ParkLoka14 from "./images/parkloka14.jpeg";
+import ParkLoka15 from "./images/parkloka15.jpg";
+import ParkLoka16 from "./images/parkloka16.jpg";
+import ParkLoka17 from "./images/parkloka17.jpg";
+import ParkLoka18 from "./images/parkloka18.jpg";
+import ParkLoka19 from "./images/parkloka19.jpg";
+import ParkLoka20 from "./images/parkloka20.jpg";
+import ParkLoka21 from "./images/parkloka21.jpg";
+import ParkLoka22 from "./images/parkloka22.jpg";
+import ParkLoka23 from "./images/parkloka23.jpg";
+import ParkLoka24 from "./images/parkloka24.jpg";
+import ParkLoka25 from "./images/parkloka25.jpg";
+import ParkLoka26 from "./images/parkloka26.jpg";
+import ParkLoka27 from "./images/parkloka27.jpg";
+import ParkLoka28 from "./images/parkloka28.jpg";
 import Hrana1 from "./images/hrana1.jpg";
 import Hrana2 from "./images/hrana2.jpg";
 import Hrana3 from "./images/hrana3.jpg";
-import Hrana4 from "./images/hrana4.jpg";
 import Hrana5 from "./images/hrana5.jpg";
+import Hrana6 from "./images/hrana6.jpg";
+import Hrana8 from "./images/hrana8.jpg";
+import Zabave1 from "./images/zabave1.jpg";
+import Zabave2 from "./images/zabave2.jpg";
+import Zabave3 from "./images/zabave3.jpg";
+import Zabave4 from "./images/zabave4.jpg";
+import Zabave5 from "./images/zabave5.jpg";
+import Zabave6 from "./images/zabave6.jpg";
+import Zabave7 from "./images/zabave7.jpg";
+import Zabave8 from "./images/zabave8.jpg";
+import Zabave9 from "./images/zabave9.jpg";
+import Zabave10 from "./images/zabave10.jpg";
+import Zabave11 from "./images/zabave11.jpg";
+import ToplarVideo from "./images/toplar_video.mp4";
+import Srce from "./images/slikasrce.png";
 
 import translate_si from "./components/translations/si/translations.json";
 import translate_en from "./components/translations/en/translations.json";
@@ -70,6 +103,24 @@ i18next.init({
     },
   },
 });
+
+const gaId = process.env.REACT_APP_GA_ID;
+
+if (gaId) {
+  const script1 = document.createElement("script");
+  script1.async = true;
+  script1.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+  document.head.appendChild(script1);
+
+  const script2 = document.createElement("script");
+  script2.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${gaId}');
+  `;
+  document.head.appendChild(script2);
+}
 
 const PreloadImages = () => {
   useEffect(() => {
@@ -101,6 +152,11 @@ const PreloadImages = () => {
       Toplar24,
       Toplar25,
       Toplar26,
+      Toplar29,
+      Toplar30,
+      Toplar31,
+      Toplar32,
+      Toplar33,
       ParkLoka1,
       ParkLoka2,
       ParkLoka3,
@@ -115,11 +171,39 @@ const PreloadImages = () => {
       ParkLoka12,
       ParkLoka13,
       ParkLoka14,
+      ParkLoka15,
+      ParkLoka16,
+      ParkLoka17,
+      ParkLoka18,
+      ParkLoka19,
+      ParkLoka20,
+      ParkLoka21,
+      ParkLoka22,
+      ParkLoka23,
+      ParkLoka24,
+      ParkLoka25,
+      ParkLoka26,
+      ParkLoka27,
+      ParkLoka28,
       Hrana1,
       Hrana2,
       Hrana3,
-      Hrana4,
       Hrana5,
+      Hrana6,
+      Hrana8,
+      Zabave1,
+      Zabave2,
+      Zabave3,
+      Zabave4,
+      Zabave5,
+      Zabave6,
+      Zabave7,
+      Zabave8,
+      Zabave9,
+      Zabave10,
+      Zabave11,
+      ToplarVideo,
+      Srce,
     ];
 
     imagesToPreload.forEach((imageSrc) => (new Image().src = imageSrc));
@@ -154,6 +238,11 @@ export {
   Toplar24,
   Toplar25,
   Toplar26,
+  Toplar29,
+  Toplar30,
+  Toplar31,
+  Toplar32,
+  Toplar33,
   ParkLoka1,
   ParkLoka2,
   ParkLoka3,
@@ -168,11 +257,39 @@ export {
   ParkLoka12,
   ParkLoka13,
   ParkLoka14,
+  ParkLoka15,
+  ParkLoka16,
+  ParkLoka17,
+  ParkLoka18,
+  ParkLoka19,
+  ParkLoka20,
+  ParkLoka21,
+  ParkLoka22,
+  ParkLoka23,
+  ParkLoka24,
+  ParkLoka25,
+  ParkLoka26,
+  ParkLoka27,
+  ParkLoka28,
   Hrana1,
   Hrana2,
   Hrana3,
-  Hrana4,
   Hrana5,
+  Hrana6,
+  Hrana8,
+  Zabave1,
+  Zabave2,
+  Zabave3,
+  Zabave4,
+  Zabave5,
+  Zabave6,
+  Zabave7,
+  Zabave8,
+  Zabave9,
+  Zabave10,
+  Zabave11,
+  ToplarVideo,
+  Srce,
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(

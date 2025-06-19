@@ -1,23 +1,334 @@
+export const Burgerji = [
+  {
+    title: "meni.burgers.titles.hamburger",
+    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
+    sestavine: "meni.burgers.sestavine.hamburger",
+    cena: "9,30",
+  },
+  {
+    title: "meni.burgers.titles.hamburgerham",
+    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
+    sestavine: "meni.burgers.sestavine.hamburgerham",
+    cena: "10,50",
+  },
+  {
+    title: "meni.burgers.titles.cheeseburger",
+    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
+    sestavine: "meni.burgers.sestavine.cheeseburger",
+    cena: "9,80",
+  },
+  {
+    title: "meni.burgers.titles.cheeseburgerham",
+    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
+    sestavine: "meni.burgers.sestavine.cheeseburgerham",
+    cena: "10,90",
+  },
+  {
+    title: "meni.burgers.titles.vegi",
+    alergeni: "(1, 3, 5, 11, 12)",
+    sestavine: "meni.burgers.sestavine.vegi",
+    cena: "10,00",
+  },
+  {
+    title: "meni.burgers.titles.vegicheese",
+    alergeni: "(1, 3, 5, 11, 12)",
+    sestavine: "meni.burgers.sestavine.vegicheese",
+    cena: "10,90",
+  },
+];
+
+export const Pizze = [
+  {
+    title: "meni.pizze.titles.picici",
+    alergeni: "",
+    sestavine: "meni.pizze.alergeni.picici",
+    cenaMala: "-----",
+    cenaVelika: "9,80",
+  },
+  {
+    title: "meni.pizze.titles.margerita",
+    alergeni: "(1, 5, 10)",
+    sestavine: "meni.pizze.alergeni.margerita",
+    cenaMala: "8,50",
+    cenaVelika: "9,00",
+  },
+  {
+    title: "meni.pizze.titles.tanavadna",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.tanavadna",
+    cenaMala: "9,00",
+    cenaVelika: "9,80",
+  },
+  {
+    title: "meni.pizze.titles.toplar",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.toplar",
+    cenaMala: "10,00",
+    cenaVelika: "11,20",
+  },
+  {
+    title: "meni.pizze.titles.neza",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.neza",
+    cenaMala: "10,00",
+    cenaVelika: "11,20",
+  },
+  {
+    title: "meni.pizze.titles.cesencek",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.cesencek",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.kmecka",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.kmecka",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.murje",
+    alergeni: "(1, 2, 4, 5, 6)",
+    sestavine: "meni.pizze.alergeni.murje",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.tunca",
+    alergeni: "(1, 2, 4, 5, 6)",
+    sestavine: "meni.pizze.alergeni.tunca",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.kraska",
+    alergeni: "(1, 5, 9, 10)",
+    sestavine: "meni.pizze.alergeni.kraska",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.hudicek",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.hudicek",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.mehiska",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.mehiska",
+    cenaMala: "10,80",
+    cenaVelika: "11,90",
+  },
+  {
+    title: "meni.pizze.titles.stirjesiri",
+    alergeni: "(1, 5, 10)",
+    sestavine: "meni.pizze.alergeni.stirjesiri",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.vegi",
+    alergeni: "(1, 5, 10)",
+    sestavine: "meni.pizze.alergeni.vegi",
+    cenaMala: "10,20",
+    cenaVelika: "11,40",
+  },
+  {
+    title: "meni.pizze.titles.poletna",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.poletna",
+    cenaMala: "10,80",
+    cenaVelika: "11,90",
+  },
+  {
+    title: "meni.pizze.titles.jurcek",
+    alergeni: "(1, 5, 8, 9, 10)",
+    sestavine: "meni.pizze.alergeni.jurcek",
+    cenaMala: "10,80",
+    cenaVelika: "11,90",
+  },
+  {
+    title: "meni.pizze.titles.napalavica",
+    alergeni: "(1 - 12)",
+    sestavine: "meni.pizze.alergeni.napalavica",
+    cenaMala: "12,40",
+    cenaVelika: "12,90",
+  },
+];
+
+export const Dodatki = [
+  {
+    title: "Artičoke",
+    alergeni: "",
+    cena: "2,20",
+  },
+  {
+    title: "Hrenovke",
+    alergeni: "(8, 9)",
+    cena: "2,20",
+  },
+  {
+    title: "Jajce",
+    alergeni: "(3)",
+    cena: "2,00",
+  },
+  {
+    title: "Kisla smetana",
+    alergeni: "(5)",
+    cena: "2,00",
+  },
+  {
+    title: "Koruza",
+    alergeni: "(1)",
+    cena: "1,80",
+  },
+  {
+    title: "Morski sadeži",
+    alergeni: "(2, 4, 6)",
+    cena: "2,20",
+  },
+  {
+    title: "Nacho sir",
+    alergeni: "(5, 9)",
+    cena: "2,20",
+  },
+  {
+    title: "Olive",
+    alergeni: "(9)",
+    cena: "2,00",
+  },
+  {
+    title: "Paprika",
+    alergeni: "",
+    cena: "2,00",
+  },
+  {
+    title: "Paradižnik",
+    alergeni: "",
+    cena: "2,00",
+  },
+  {
+    title: "Pelati",
+    alergeni: "(9)",
+    cena: "2,00",
+  },
+  {
+    title: "Pršut",
+    alergeni: "(9)",
+    cena: "2,20",
+  },
+  {
+    title: "Sir",
+    alergeni: "(1, 5, 8, 9)",
+    cena: "2,00",
+  },
+  {
+    title: "Slanina",
+    alergeni: "(8, 9)",
+    cena: "2,20",
+  },
+  {
+    title: "Šunka",
+    alergeni: "(8, 9)",
+    cena: "2,00",
+  },
+  {
+    title: "Tatarska omaka",
+    alergeni: "(3, 5, 9)",
+    cena: "2,20",
+  },
+  {
+    title: "Tržaška omaka",
+    alergeni: "",
+    cena: "2,20",
+  },
+  {
+    title: "Tuna",
+    alergeni: "(2, 4, 6)",
+    cena: "2,20",
+  },
+  {
+    title: "Embalaža",
+    alergeni: "",
+    cena: "1,00",
+  },
+];
+
+export const Alergeni = [
+  {
+    title: "Žita, ki vsebujejo gluten",
+    številka: "1",
+  },
+  {
+    title: "Raki",
+    številka: "2",
+  },
+  {
+    title: "Jajca in izdelki iz njih",
+    številka: "3",
+  },
+  {
+    title: "Ribe",
+    številka: "4",
+  },
+  {
+    title: "Mleko in mlečni izdelki",
+    številka: "5",
+  },
+  {
+    title: "Mehkužci",
+    številka: "6",
+  },
+  {
+    title: "Oreščki",
+    številka: "7",
+  },
+  {
+    title: "Soja",
+    številka: "8",
+  },
+  {
+    title: "Žveplov dioksid in sulfiti",
+    številka: "9",
+  },
+  {
+    title: "Gobe",
+    številka: "10",
+  },
+  {
+    title: "Sezamovo seme",
+    številka: "11",
+  },
+  {
+    title: "Gorčično seme",
+    številka: "12",
+  },
+];
+
 export const DrugaPonudba = [
   {
     title: "Toast s šunko in sirom",
     alergeni: "1, 3, 5, 8 ,9",
     sestavine: "",
-    cena: "4,30",
+    cena: "2,00",
   },
   {
     title: "Klobasa",
     alergeni: "1, 5, 8, 9, 12",
-    sestavine: "",
-    cena: "8,80",
+    sestavine: "Kruh, ajvar, gorčica, hren",
+    cena: "9,80",
   },
   {
     title: "Sladoled",
     alergeni: "1, 3, 5, 7, 9",
     sestavine: "",
-    cena: "2,50",
+    cena: "2,60",
   },
 ];
+
 /* export const TopliNapitki = [
   {
     title: "Kava espresso",
@@ -533,313 +844,3 @@ export const Viskiji = [
     cena: "2,80",
   },
 ]; */
-
-export const Burgerji = [
-  {
-    title: "meni.burgers.titles.hamburger",
-    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
-    sestavine: "meni.burgers.sestavine.hamburger",
-    cena: "8,00",
-  },
-  {
-    title: "meni.burgers.titles.hamburgerham",
-    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
-    sestavine: "meni.burgers.sestavine.hamburgerham",
-    cena: "8,50",
-  },
-  {
-    title: "meni.burgers.titles.cheeseburger",
-    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
-    sestavine: "meni.burgers.sestavine.cheeseburger",
-    cena: "9,00",
-  },
-  {
-    title: "meni.burgers.titles.cheeseburgerham",
-    alergeni: "(1, 3, 5, 8, 9, 11, 12)",
-    sestavine: "meni.burgers.sestavine.cheeseburgerham",
-    cena: "9,50",
-  },
-  {
-    title: "meni.burgers.titles.vegi",
-    alergeni: "(1, 3, 5, 11, 12)",
-    sestavine: "meni.burgers.sestavine.vegi",
-    cena: "8,00",
-  },
-  {
-    title: "meni.burgers.titles.vegicheese",
-    alergeni: "(1, 3, 5, 11, 12)",
-    sestavine: "meni.burgers.sestavine.vegicheese",
-    cena: "8,50",
-  },
-];
-
-export const Pizze = [
-  {
-    title: "meni.pizze.titles.picici",
-    alergeni: "",
-    sestavine: "meni.pizze.alergeni.picici",
-    cenaMala: "-----",
-    cenaVelika: "8,50",
-  },
-  {
-    title: "meni.pizze.titles.margerita",
-    alergeni: "(1, 5, 10)",
-    sestavine: "meni.pizze.alergeni.margerita",
-    cenaMala: "7,50",
-    cenaVelika: "7,80",
-  },
-  {
-    title: "meni.pizze.titles.tanavadna",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.tanavadna",
-    cenaMala: "8,50",
-    cenaVelika: "9,00",
-  },
-  {
-    title: "meni.pizze.titles.toplar",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.toplar",
-    cenaMala: "9,60",
-    cenaVelika: "10,00",
-  },
-  {
-    title: "meni.pizze.titles.neza",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.neza",
-    cenaMala: "9,60",
-    cenaVelika: "10,00",
-  },
-  {
-    title: "meni.pizze.titles.cesencek",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.cesencek",
-    cenaMala: "9,70",
-    cenaVelika: "10,20",
-  },
-  {
-    title: "meni.pizze.titles.kmecka",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.kmecka",
-    cenaMala: "9,70",
-    cenaVelika: "10,20",
-  },
-  {
-    title: "meni.pizze.titles.murje",
-    alergeni: "(1, 2, 4, 5, 6)",
-    sestavine: "meni.pizze.alergeni.murje",
-    cenaMala: "9,70",
-    cenaVelika: "10,20",
-  },
-  {
-    title: "meni.pizze.titles.tunca",
-    alergeni: "(1, 2, 4, 5, 6)",
-    sestavine: "meni.pizze.alergeni.tunca",
-    cenaMala: "9,60",
-    cenaVelika: "10,00",
-  },
-  {
-    title: "meni.pizze.titles.kraska",
-    alergeni: "(1, 5, 9, 10)",
-    sestavine: "meni.pizze.alergeni.kraska",
-    cenaMala: "9,70",
-    cenaVelika: "10,20",
-  },
-  {
-    title: "meni.pizze.titles.hudicek",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.hudicek",
-    cenaMala: "9,70",
-    cenaVelika: "10,20",
-  },
-  {
-    title: "meni.pizze.titles.mehiska",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.mehiska",
-    cenaMala: "9,80",
-    cenaVelika: "10,30",
-  },
-  {
-    title: "meni.pizze.titles.stirjesiri",
-    alergeni: "(1, 5, 10)",
-    sestavine: "meni.pizze.alergeni.stirjesiri",
-    cenaMala: "9,60",
-    cenaVelika: "10,00",
-  },
-  {
-    title: "meni.pizze.titles.vegi",
-    alergeni: "(1, 5, 10)",
-    sestavine: "meni.pizze.alergeni.vegi",
-    cenaMala: "9,60",
-    cenaVelika: "10,30",
-  },
-  {
-    title: "meni.pizze.titles.poletna",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.pizze.alergeni.poletna",
-    cenaMala: "9,80",
-    cenaVelika: "10,30",
-  },
-  {
-    title: "meni.pizze.titles.jurcek",
-    alergeni: "(1, 5, 8, 9, 10)",
-    sestavine: "meni.alergeni.jurcek",
-    cenaMala: "9,80",
-    cenaVelika: "10,30",
-  },
-  {
-    title: "meni.pizze.titles.napalavica",
-    alergeni: "(1 - 12)",
-    sestavine: "meni.pizze.alergeni.napalavica",
-    cenaMala: "11,00",
-    cenaVelika: "11,50",
-  },
-];
-
-export const Dodatki = [
-  {
-    title: "Artičoke",
-    alergeni: "",
-    cena: "2,10",
-  },
-  {
-    title: "Hrenovke",
-    alergeni: "(8, 9)",
-    cena: "2,10",
-  },
-  {
-    title: "Jajce",
-    alergeni: "(3)",
-    cena: "1,90",
-  },
-  {
-    title: "Kisla smetana",
-    alergeni: "(5)",
-    cena: "1,90",
-  },
-  {
-    title: "Koruza",
-    alergeni: "(1)",
-    cena: "1,70",
-  },
-  {
-    title: "Morski sadeži",
-    alergeni: "(2, 4, 6)",
-    cena: "2,10",
-  },
-  {
-    title: "Nacho sir",
-    alergeni: "(5, 9)",
-    cena: "2,10",
-  },
-  {
-    title: "Olive",
-    alergeni: "(9)",
-    cena: "1,90",
-  },
-  {
-    title: "Paprika",
-    alergeni: "",
-    cena: "1,90",
-  },
-  {
-    title: "Paradižnik",
-    alergeni: "",
-    cena: "1,90",
-  },
-  {
-    title: "Pelati",
-    alergeni: "(9)",
-    cena: "1,90",
-  },
-  {
-    title: "Pršut",
-    alergeni: "(9)",
-    cena: "2,10",
-  },
-  {
-    title: "Sir",
-    alergeni: "(1, 5, 8, 9)",
-    cena: "1,90",
-  },
-  {
-    title: "Slanina",
-    alergeni: "(8, 9)",
-    cena: "2,10",
-  },
-  {
-    title: "Šunka",
-    alergeni: "(8, 9)",
-    cena: "1,90",
-  },
-  {
-    title: "Tatarska omaka",
-    alergeni: "(3, 5, 9)",
-    cena: "2,10",
-  },
-  {
-    title: "Tržaška omaka",
-    alergeni: "",
-    cena: "2,10",
-  },
-  {
-    title: "Tuna",
-    alergeni: "(2, 4, 6)",
-    cena: "2,10",
-  },
-  {
-    title: "Embalaža",
-    alergeni: "",
-    cena: "1,20",
-  },
-];
-
-export const Alergeni = [
-  {
-    title: "Žita, ki vsebujejo gluten",
-    številka: "1",
-  },
-  {
-    title: "Raki",
-    številka: "2",
-  },
-  {
-    title: "Jajca in izdelki iz njih",
-    številka: "3",
-  },
-  {
-    title: "Ribe",
-    številka: "4",
-  },
-  {
-    title: "Mleko in mlečni izdelki, ki vsebujejo laktozo",
-    številka: "5",
-  },
-  {
-    title: "Mehkužci",
-    številka: "6",
-  },
-  {
-    title: "Oreščki",
-    številka: "7",
-  },
-  {
-    title: "Soja",
-    številka: "8",
-  },
-  {
-    title: "Žveplov dioksid in sulfiti",
-    številka: "9",
-  },
-  {
-    title: "Gobe",
-    številka: "10",
-  },
-  {
-    title: "Sezamovo seme",
-    številka: "11",
-  },
-  {
-    title: "Gorčično seme",
-    številka: "12",
-  },
-];

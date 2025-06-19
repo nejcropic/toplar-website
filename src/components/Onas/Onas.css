@@ -1,66 +1,67 @@
 .onas-wrapper {
-    position: relative;
-    min-height: 50vh;
-    width: 100%;
-    background-color: var(--eerie-black-1);
-    color: var(--mainColor);
-    font-family: var(--fontFamily-forum);
-    padding: 2rem 1rem;
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  background-color: var(--eerie-black-1);
+  color: var(--mainColor);
+  font-family: var(--fontFamily-forum);
+  padding: 1rem 0rem;
 }
-
-.onas-container {
-    background-color: var(--smoky-black-1);
-    width: 80%;
-    padding: 0 0.5rem;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-}
-.onas-container p, .onas-container pre{
-    font-size: 1.2rem;
-}
-.onas-container img{
-    width: 50%;
-    height: auto;
-    padding: 2rem 1rem;
-}
-.onas-flex {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.onas-flex p, .onas-flex pre{
-    padding: 1rem;
-    width: 50%;
-}
-.reverse {
-    flex-direction: row-reverse;
-    background-color: var(--mainColor);
-}
-.reverse p, .reverse pre{
-    color: var(--smoky-black-1);
-    font-family: inherit; /* Use the same font as the surrounding text */
-    white-space: pre-wrap; /* Wrap text to fit the container width */
-    word-wrap: break-word; /* Break long words to fit the container width */
-    background: none; /* Remove the default background */
-    border: none; /* Remove the default border */
-}
-@media screen and (max-width: 1000px) {
-    .onas-container {
-        width: 100%;
-    }
-    .onas-container img{
-        width: 100%;
-    }
-    .onas-flex{
-        flex-direction: column;
-    }
-    .onas-flex p,.onas-flex pre{
-        width: 100%;
-    }
-  }
 
 @media screen and (min-width: 2560px) {
-    .onas-container {
-        width: 50%;
-    }
+  .onas-wrapper {
+    padding: 1rem 0rem;
+  }
+}
+
+.onas-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.onas-flex {
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-position: center;
+  background-size: cover;
+}
+.first-image {
+  background-image: url("../../images/toplar22.jpg");
+}
+.second-image {
+  background-image: url("../../images/toplar29.jpg");
+}
+.third-image {
+  background-image: url("../../images/toplar17.jpg");
+}
+.forth-image {
+  background-image: url("../../images/parkloka7.jpg");
+}
+.onas-flex p,
+.onas-flex pre {
+  padding: 1rem;
+  width: 50%;
+  height: 100%;
+  color: var(--white);
+  text-align: center;
+  margin: auto;
+  font-size: 1.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .onas-flex {
+    width: 100%;
+    flex-direction: column;
+  }
+  .onas-flex p,
+  .onas-flex pre {
+    width: 100%;
+    font-size: var(--fontSizePc);
+  }
 }

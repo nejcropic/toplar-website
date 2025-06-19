@@ -1,42 +1,42 @@
 .scrollDownBtnSlider {
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%); /* Add this to center it horizontally */
-    z-index: 999;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%); /* Add this to center it horizontally */
+  z-index: 999;
 }
 
-.scrollDownBtnSlider button{
-    display: block;
-    margin: 0 ;
-    height: 100%;
-    width: 100%;
-    color: var(--mainColor);
-    background-color: transparent;
-    border: none;/* 
+.scrollDownBtnSlider button {
+  display: block;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: var(--mainColor);
+  background-color: transparent;
+  border: none; /* 
     padding: 0.5rem;
     background-color: var(--transparentBlackColor);
     border: 1px solid var(--mainColor);
     border-radius: 2px; */
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.scrollDownBtnSlider button:hover{
-    background-color: none;
-    color: var(--mainColor);
+.scrollDownBtnSlider button:hover {
+  background-color: none;
+  color: var(--mainColor);
 }
-.scrollDownBtnSlider i{
-    font-size: 2rem;
+.scrollDownBtnSlider i {
+  font-size: 2rem;
 }
 @media screen and (max-width: 1000px) {
-    .scrollDownBtnSlider button:hover{
-        background-color: none;
-    }
-    .scrollDownBtnSlider button i:hover{
-        color: var(--mainColor);
-    }
+  .scrollDownBtnSlider button:hover {
+    background-color: none;
+  }
+  .scrollDownBtnSlider button i:hover {
+    color: var(--mainColor);
+  }
 }
 
 .show {
-    display: block;
+  display: block;
 }

@@ -35,6 +35,12 @@
       "subtitle": "Rental",
       "description": "Next to the waterfalls of the Krka River, near the old Roman road, lies the picturesque village of Zagradec, which has grown on the heritage of the old ironworks settlement Fužina. In this area, the hydroelectric power plant and the only roller mill in the upper course of the Krka River still stand today. The beautiful views of the Krka River here allow the development of a unique boutique tourism, which you can also experience in our Park Loka.",
       "button": "Rental options"
+    },
+    "biljard": {
+      "title": "Billiards",
+      "subtitle": "A game of billiards",
+      "description": "At Pizzeria Toplar, you can also play billiards. We have two billiard tables suitable for both beginners and more experienced players.",
+      "button": "View gallery"
     }
   },
   "meni": {
@@ -48,7 +54,8 @@
       "size1": "Small",
       "size2": "Large",
       "titles": {
-        "picici": "Pičiči",
+        "picici": "Pičiči with sauces",
+        "picici_slanina": "Pičiči with bacon and sauces",
         "tanavadna": "Tanavadna",
         "neza": "Neža",
         "kmecka": "Country Pizza",
@@ -67,7 +74,8 @@
         "jurcek": "Porcini"
       },
       "alergeni": {
-        "picici": "",
+        "picici": "Cheese",
+        "picici_slanina": "Cheese, bacon",
         "tanavadna": "Tomato sauce, ham, mushrooms, cheese",
         "neza": "Tomato sauce, ham, mushrooms, sausages, cheese",
         "kmecka": "Tomato sauce, smoked ham, mushrooms, dry salami, cheese, horseradish",
@@ -110,31 +118,31 @@
     "text2": "The hayrack, also locally known as 'kazuc', with its wooden and open structure, is an unmistakable part of the Slovenian rural landscape. In Dolenjska, the so-called double hayrack or 'toplar' predominates. Initially, hayracks were used for drying and storing crops, but nowadays, they mainly store agricultural machinery and tools. In the past, hayracks also had a social purpose, which we continue to preserve at Pizzeria Toplar. Toplar's hayrack has been converted for parties and private events, using only old materials from the floor and granary.",
     "text3": "Zagraška valley, \n you are so beautiful.\n You have sunny ribs \n and small villages.\n\n Green Krka \n quietly murmurs.\n Through the deep channel \n it rushes into the distance.\n\n There, a white church \n stands by the Krka.\n Adornly beautifying \n the friendly Zagraška valley.\n\n Lojze Zupančič",
     "text4": "Just a stone's throw from the village of Zagradec along the river Krka, our Park Loka is located. During the hot summer days, it offers refreshing opportunities in the pleasantly cool river at its waterfalls and in the shade of various trees surrounding the park. We have enriched the park with numerous planted flowers and shrubs, and on the slope above the river, we have created a sense of landscape diversity with archways and rock gardens."
-},
-"gallery": {
+  },
+  "gallery": {
     "text1": "Indoor spaces",
     "text2": "Park Loka",
     "text3": "Food and drink"
-},
-"loka": {
+  },
+  "loka": {
     "title": "Visit the park",
     "subtitle": "For use and rental of the facilities, please call 01-7886-833 or 041-655-227",
     "text": "Rental available.",
     "gallery": "Gallery",
     "kasca": {
-        "title": "Kašča",
-        "text": "At the entrance to Park Loka is the Kašča bar, which offers refreshments during the summer months with adjusted working hours."
+      "title": "Kašča",
+      "text": "At the entrance to Park Loka is the Kašča bar, which offers refreshments during the summer months with adjusted working hours."
     },
     "kozolec": {
-        "title": "Hayrack",
-        "text": "Underneath the Kašča bar is an amphitheater with a hayrack, which is intended for large parties and events, with a rental option."
+      "title": "Hayrack",
+      "text": "Underneath the Kašča bar is an amphitheater with a hayrack, which is intended for large parties and events, with a rental option."
     },
     "loka": {
-        "title": "Loka",
-        "text": "In the lower part of Park Loka along the river Krka, there is a varied space for parties, picnics, camping, and sports activities. \n By arrangement, you can rent the entire space with a wooden cabin for a larger group or a particular corner by the river, with a fire pit for a picnic for smaller groups and camping.\n The lower part of the park offers recreational opportunities and is also suitable for concluding a canoeing trip on the Krka."
+      "title": "Loka",
+      "text": "In the lower part of Park Loka along the river Krka, there is a varied space for parties, picnics, camping, and sports activities. \n By arrangement, you can rent the entire space with a wooden cabin for a larger group or a particular corner by the river, with a fire pit for a picnic for smaller groups and camping.\n The lower part of the park offers recreational opportunities and is also suitable for concluding a canoeing trip on the Krka."
     }
-},
-"footer": {
+  },
+  "footer": {
     "title": "Pizzeria",
     "address": "Slovenia",
     "map": "Map",
@@ -145,5 +153,5 @@
     "time2": "Fri - Sat",
     "time3": "Sun",
     "contact": "Contact"
-}
+  }
 }

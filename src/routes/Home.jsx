@@ -8,7 +8,6 @@ import BackgroundSlider from "../components/BackgroundSlider/BackgroundSlider";
 import Footer from "../components/Footer/Footer";
 import { HomeItems } from "../components/Home/HomeItems";
 import HomeItem from "../components/Home/HomeItem";
-import ParkLokaHome from "../components/Home/ParkLokaHome";
 
 import {
   sliderData,
@@ -28,11 +27,9 @@ function Home() {
       <ScrollDownButton />
       <div className="home-wrapper">
         {HomeItems.map((item, index) => (
-          <HomeItem key={index} item={item} />
+          <HomeItem key={index} item={item} index={index} />
         ))}
       </div>
-      {/* <HomeItem />
-      <ParkLokaHome /> */}
       <Footer />
     </>
   );
